@@ -35,7 +35,6 @@ Upgrades
 *TEMPLATE
 	name:not implemented :)
 	desc:this is what we call a quility control mistake. Let's hope Rein fixes it.
-	cost:1 money
 *nokia1610
 	name:Nokia 1610 Production
 	desc:The only reason it's here is to make you NOT Bored. <//> It's the (future) Nokia 2110 but worse.
