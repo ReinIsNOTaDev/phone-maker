@@ -1,6 +1,5 @@
 Let's make a game!
-/ Welcome to the Phone Maker 2 Code! I don't even know if this is possible.
-ksad
+// Welcome to the Phone Maker 2 Code! I don't even know if this is possible.
 	name:Phone Maker 2
 	by:TGRein
 // TODO: Add the links once done
@@ -24,8 +23,8 @@ Buildings
 	name:Nokia Factory
 	desc:You start as infamous Nokia. Starting from the 1011, all the way until the 6680.
 	on tick:yield 1 money
-	start with 1
 	cost:100 money
+	start with:1
 *motorola
 	name:Motorola Factory
 	desc:You now run as Motorola, running away from the mistake that is Symbian.
@@ -35,13 +34,26 @@ Buildings
 Upgrades
 *TEMPLATE
 	name:not implemented :)
-	desc:this is what is call a quility control mistake. Let's hope Rein fixes it.
+	desc:this is what we call a quility control mistake. Let's hope Rein fixes it.
 	cost:1 money
+*nokia1610
+	name:Nokia 1610 Production
+	desc:The only reason it's here is to make you NOT Bored. <//> It's the (future) Nokia 2110 but worse.
+	passive:increase yield of nokia by 0.4
+	cost:10 money
+	req:1 nokia
+*nokia1611
+	name:Nokia 1611 Production
+	desc:The 1610 but with (the ability for) the phone to be solar-powered.
+	passive:increase yield of nokia by 0.6
+	cost:25 money
+	req:nokia1610
 *nokia2110
 	name:Nokia 2110 Production
 	desc:SMS has been equipped. <//> Sooo hard to make descriptions for these things.
 	passive:increase yield of nokia by 1
 	cost:50 money
+	req:nokia1611
 *nokia8110
 	name:Nokia 8110 Production
 	desc:The first Sliding Phone. <//> It slides, what can I say?
@@ -72,7 +84,7 @@ Upgrades
 	passive:increase yield of nokia by 2
 	cost:150 money
 	req:nokia3210
-*Nokia5510
+*nokia5510
 	name:Nokia 5510 Production
 	desc:Couls hold 64mb of music. <//> You do have to use the LSE format.
 	passive:increase yield of nokia by 2.2
@@ -94,13 +106,7 @@ Upgrades
 	name:Motorola
 	desc:Go to Motorola, Sybian hater!
 	passive:hide nokia
-	passive:lower yield of nokia by 14.6
+	passive:lower yield of nokia by 15.6
 	passive:yield 1 motorola
 	cost:100 money
 	req:nokia6100
-
-
-
-	
-
-
