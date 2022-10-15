@@ -26,6 +26,12 @@ Buildings
 	on tick:yield 1 money
 	start with 1
 	cost:100 money
+*motorola
+	name:Motorola Factory
+	desc:You now run as Motorola, running away from the mistake that is Symbian.
+	on tick:yield 15 money
+	cost:150 money
+	req:notsymbian
 Upgrades
 *TEMPLATE
 	name:not implemented :)
@@ -59,7 +65,41 @@ Upgrades
 	desc:The first MASS MARKET phone with internal antenna. <//> The 5110's Cousin!
 	passive:increase yield of nokia by 1.8
 	cost:135 money
-	req;nokia5110
+	req:nokia5110
+*nokia3310
+	name:Nokia 3310 Production
+	desc:The Infamous Brick. <//> Also, it's new feature: Chat! Yeah, that is wierd.
+	passive:increase yield of nokia by 2
+	cost:150 money
+	req:nokia3210
+*Nokia5510
+	name:Nokia 5510 Production
+	desc:Couls hold 64mb of music. <//> You do have to use the LSE format.
+	passive:increase yield of nokia by 2.2
+	cost:160 money
+	req:nokia3310
+*nokia6100
+	name:Nokia 6100 production
+	desc:A Popular mid-range Nokia phone. <//> Really, no feature page, just that piece of info.
+	passive:increase yield of nokia by 2.4
+	cost:175 money
+	req:nokia5510
+*symbian
+	name:Symbian OS.
+	desc:Either, 1) Push your R&D money and make the most popular OS before the touchscreen Revolution or 2) Get LESS Nokia Phones but end up with more money for the touchscreen revolution.
+	passive:hide notsymbian
+	cost:500 money
+	req:nokia6100
+*notsymbian
+	name:Motorola
+	desc:Go to Motorola, Sybian hater!
+	passive:hide nokia
+	passive:lower yield of nokia by 14.6
+	passive:yield 1 motorola
+	cost:100 money
+	req:nokia6100
+
+
 
 	
 
