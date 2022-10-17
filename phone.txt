@@ -1,17 +1,17 @@
 Let's make a game!
-// Welcome to the Phone Maker 2 Code! I don't even know if this is possible.
+//Welcome to the Phone Maker 2 Code! I don't even know if this is possible.
 	name:Phone Maker 2
 	by:TGRein
-// TODO: Add the links once done
-	desc:This is Phone Maker 2, My (probably) BIGGEST project. ever.
+//TODO: Add the links once done
+	desc:This is Phone Maker 2, My (probably) BIGGEST project. ever. 
 	created:15/10/2022
 	updated:15/10/2022
 	version:1
 Settings
 	background:https://pixelartmaker-data-78746291193.nyc3.digitaloceanspaces.com/image/6221603c7dd736d.png
-	building cost increase:110%
+	building cost increase:100%
 Layout
-// TODO: Optimize for Mobile
+//TODO: Optimize for Mobile
 use default
 Resources
 *money
@@ -19,6 +19,7 @@ Resources
 	desc:It's Money. You need a lot of it to evolve off your Nokia Thingy.
 	text:You have [?(this=0)|no money|[this] money], your Money Per Second is [money:ps], and in total you earned [money:earned] money.
 Buildings
+//Simply, all brands possible in Phone Maker 2.
 *nokia
 	name:Nokia Factory
 	desc:You start as infamous Nokia. Starting from the 1011, all the way until the 6680.
@@ -32,7 +33,9 @@ Buildings
 	cost:150 money
 	req:notsymbian
 Upgrades
+//Progression of Brands. A Little complicated, but you can do it, right?
 *TEMPLATE
+//This is the things you will see when it's missing (varies by progress)
 	name:not implemented :)
 	desc:this is what we call a quility control mistake. Let's hope Rein fixes it.
 *nokia1610
@@ -83,6 +86,36 @@ Upgrades
 	passive:increase yield of nokia by 2
 	cost:150 money
 	req:nokia3210
+*purge1
+    name:PURGE
+    desc:hides all upgrades to decrease clutter (expect this every now and then)
+    cost:0 money
+    passive:
+        hide nokia1610
+        hide nokia1611
+        hide nokia2110
+        hide nokia8110
+        hide nokia6110
+        hide nokia5110
+        hide nokia3210
+        hide nokia3310
+    end
+    req:nokia3310
+*unpurge1
+    name:unpurge
+    desc:unpurge it JUST IN CASE.
+    cost:0 money
+    passive:
+        show nokia1610
+        show nokia1611
+        show nokia2110
+        show nokia8110
+        show nokia6110
+        show nokia5110
+        show nokia3210
+        show nokia3310
+    end
+    req:purge1
 *nokia5510
 	name:Nokia 5510 Production
 	desc:Couls hold 64mb of music. <//> You do have to use the LSE format.
@@ -95,6 +128,11 @@ Upgrades
 	passive:increase yield of nokia by 2.4
 	cost:175 money
 	req:nokia5510
+*purge2
+    name:PURGE 2
+    desc:you know the drill already, right?
+    cost:0 money
+    req:nokia6100
 *symbian
 	name:Symbian OS.
 	desc:Either, 1) Push your R&D money and make the most popular OS before the touchscreen Revolution or 2) Get LESS Nokia Phones but end up with more money for the touchscreen revolution.
@@ -103,9 +141,106 @@ Upgrades
 	req:nokia6100
 *notsymbian
 	name:Motorola
-	desc:Go to Motorola, Sybian hater!
-	passive:hide nokia
-	passive:lower yield of nokia by 15.6
-	passive:yield 1 motorola
+	desc:Go to Motorola, Symbian hater!
+	passive:
+        hide nokia
+	    hide symbian
+        lower yield of nokia by 15.6
+    end
+	on earn:yield 1 motorola
 	cost:100 money
 	req:nokia6100
+*nokia7650
+	name:Nokia 7650 Production
+	desc:The first Symbian OS Phone! <//> PrOpIeTaRy TiMe!
+	passive:increase yield of nokia by 2.6
+	cost:200 money
+	req:symbian
+*nokia1100
+	name:Nokia 1100 Production
+	desc:The most popular phone handset. EVER. <//> MONEY MONEY MONEY!!!!
+	passive:increase yield of nokia by 3
+	cost:180 money
+	req:nokia6100
+*nokia6680
+	name:Nokia 6680 Production
+	desc:A HIGH-END symbian phone. <//> Profesoinal be like:
+    passive:increase yield of nokia by 2.8
+    cost:225 money
+    req:nokia7650
+*motoc139
+    name:Motorola C139 Production
+    desc:You decided to attack the 1100. You failed, but made the cheapest unlocked GSM device.
+    passive:increase yield of motorola by 1
+    cost:100 money
+    req:notsymbian
+*motoc168
+    name:Motorola C168 Production
+    desc:This is boring... <//> Even Wikipedia wasn't able to make proper pages with this.
+    passive:increase yield of motorola by 1.2
+    cost:120 money
+    req:motoc139
+*motoc190
+    name:Motorola C190 Production
+    desc:Bluetooth. Yep, that's it. <//> Blue Colored Teeth!
+    passive:increase yield of motorola by 1.4
+    cost:150 money
+    req:motoc168
+*android
+    name:Android
+    desc:Adopt the Robot Operating System Android!
+	passive:hide ios
+    cost:400 money
+    req:motoc190 or nokia6680
+*ios
+    name:iPhone OS (IOS)
+    desc:(Try to) Adopt the Tightly integrated Operating System iPhon- I meant IOS!
+	passive:hide android
+    cost:1250 money
+    req:motoc190 or nokia6680
+*samsungunlock
+    name:Samsung
+    desc:Samsung Electronics has been split, and they don't know what to do with their phones, but the question is: will you accept them?
+    passive:
+		hide googleunlock
+		hide htcunlock
+		hide bbkunlock
+	end
+	on earn:yield 1 samsung
+    cost:500 money
+    req:android
+*googleunlock
+    name:Google
+    desc:Become Google, Make Nexus (only phones, because this is already a big mess) and then make Pixel (because FUN!)
+    passive:
+		hide samsungunlock
+		hide htcunlock
+		hide bbkunlock
+	end
+	on earn:yield 1 google
+    cost:700 money
+    req:android
+*htcunlock
+    name:HTC
+    desc:Uhhhh Be HTC if you want?
+    passive:
+		hide samsungunlock
+		hide googleunlock
+		hide bbkunlock
+	end
+	on earn:yield 1 htc
+	cost:600 money
+	req:android
+*bbkunlock
+     name:BBK
+     desc:Unlock BBK, China, Multiple brands.
+	passive:
+		hide samsungunlock
+		hide googleunlock
+		hide htcunlock
+	end
+	on earn:yield 1 oppo
+	cost:900 money
+	req:android
+*appleunlock
+	name:Apple
