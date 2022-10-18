@@ -32,6 +32,36 @@ Buildings
 	on tick:yield 15 money
 	cost:150 money
 	req:notsymbian
+*htc
+	name:HTC Factory
+	desc:You now run as HTC, because i dunno?
+	on tick:yield 20 money
+	cost:250 money
+	req:htcunlock
+*oppo
+	name:Oppo Factory
+	desc:You now run as Oppo because..... I can't not say china right?
+	on tick:yield 30 money
+	cost:400 money
+	req:bbkunlock
+*samsung
+	name:Samsung Factory
+	desc:you now run as Samsung because they are EPIC PHONES
+	on tick:yield 40 money 
+	cost:500 money
+	req:samsungunlock
+*google
+	name:Google Factory
+	desc:You now run as Google because we like Android A LOT!
+	on tick:yield 60 money
+	cost:700 money
+	req:googleunlock
+*apple
+	name:Apple Factory
+	desc:You now run as Apple because they think you are cool 
+	on tick:yield 100 money
+	cost:1000 money
+	req:appleunlock
 Upgrades
 //Progression of Brands. A Little complicated, but you can do it, right?
 *TEMPLATE
@@ -213,9 +243,9 @@ Upgrades
     name:Google
     desc:Become Google, Make Nexus (only phones, because this is already a big mess) and then make Pixel (because FUN!)
     passive:
-	hide samsungunlock
-	hide htcunlock
-	hide bbkunlock
+		hide samsungunlock
+		hide htcunlock
+		hide bbkunlock
     end
     on earn:yield 1 google
     cost:700 money
@@ -224,9 +254,9 @@ Upgrades
     name:HTC
     desc:Uhhhh Be HTC if you want?
     passive:
-	hide samsungunlock
-	hide googleunlock
-	hide bbkunlock
+		hide samsungunlock
+		hide googleunlock
+		hide bbkunlock
     end
     on earn:yield 1 htc
     cost:600 money
@@ -235,12 +265,15 @@ Upgrades
     name:BBK
     desc:Unlock BBK, China, Multiple brands.
     passive:
-	hide samsungunlock
-	hide googleunlock
-	hide htcunlock
+		hide samsungunlock
+		hide googleunlock
+		hide htcunlock
     end
     on earn:yield 1 oppo
     cost:900 money
     req:android
 *appleunlock
     name:Apple
+	desc:Get apple, because you NEED iOS <//> I WILL BEG FOR THIS!!!
+	on earn:yield 1 apple
+	req:ios
