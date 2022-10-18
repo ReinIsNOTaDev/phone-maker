@@ -315,3 +315,7 @@ Upgrades
 	on earn:yield 1 apple
 	cost:1500 money
 	req:ios
+*iphone 
+	name:The iPhone
+	desc:You know it, I know it.
+	passive:
