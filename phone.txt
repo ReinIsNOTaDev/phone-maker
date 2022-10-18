@@ -244,13 +244,25 @@ Upgrades
 *android
     name:Android
     desc:Adopt the Robot Operating System Android!
-    passive:hide ios
+    passive:
+		hide ios
+		hide nokia
+		hide motorola
+		lower yield of nokia by 24
+		lower yield of motorola by 18.6
+	end
     cost:400 money
     req:motoc190 or nokia6680
 *ios
     name:iPhone OS (IOS)
     desc:(Try to) Adopt the Tightly integrated Operating System iPhon- I meant IOS!
-    passive:hide android
+    passive:
+		hide android
+		hide nokia
+		hide motorola
+		lower yield of nokia by 24
+		lower yield of motorola by 18.6
+	end
     cost:1250 money
     req:motoc190 or nokia6680
 *samsungunlock
