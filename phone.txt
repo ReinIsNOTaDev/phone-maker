@@ -162,7 +162,32 @@ Upgrades
     name:PURGE 2
     desc:you know the drill already, right?
     cost:0 money
+	passive:
+		hide purge1
+		hide unpurge1
+		hide nokia5510
+		hide nokia6100
+	end
     req:nokia6100
+*unpurge2
+	name:unpurge
+	desc:unpurge it JUST IN CASE.
+	cost:0 money
+    passive:
+        show nokia1610
+        show nokia1611
+        show nokia2110
+        show nokia8110
+        show nokia6110
+        show nokia5110
+        show nokia3210
+        show nokia3310
+		show purge1
+		show unpurge1
+		show nokia5510
+		show nokia6100
+    end
+	req:nokia6100
 *symbian
 	name:Symbian OS.
 	desc:Either, 1) Push your R&D money and make the most popular OS before the touchscreen Revolution or 2) Get LESS Nokia Phones but end up with more money for the touchscreen revolution.
@@ -276,4 +301,5 @@ Upgrades
     name:Apple
 	desc:Get apple, because you NEED iOS <//> I WILL BEG FOR THIS!!!
 	on earn:yield 1 apple
+	cost:1500 money
 	req:ios
