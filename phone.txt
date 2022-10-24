@@ -32,36 +32,6 @@ Buildings
 	on tick:yield 15 money
 	cost:150 money
 	req:notsymbian
-*htc
-	name:HTC Factory
-	desc:You now run as HTC, because i dunno?
-	on tick:yield 20 money
-	cost:250 money
-	req:htcunlock
-*oppo
-	name:Oppo Factory
-	desc:You now run as Oppo because..... I can't not say china right?
-	on tick:yield 30 money
-	cost:400 money
-	req:bbkunlock
-*samsung
-	name:Samsung Factory
-	desc:you now run as Samsung because they are EPIC PHONES
-	on tick:yield 40 money 
-	cost:500 money
-	req:samsungunlock
-*google
-	name:Google Factory
-	desc:You now run as Google because we like Android A LOT!
-	on tick:yield 60 money
-	cost:700 money
-	req:googleunlock
-*apple
-	name:Apple Factory
-	desc:You now run as Apple because they think you are cool 
-	on tick:yield 100 money
-	cost:1000 money
-	req:appleunlock
 Upgrades
 //Progression of Brands. A Little complicated, but you can do it, right?
 *TEMPLATE
@@ -162,32 +132,7 @@ Upgrades
     name:PURGE 2
     desc:you know the drill already, right?
     cost:0 money
-	passive:
-		hide purge1
-		hide unpurge1
-		hide nokia5510
-		hide nokia6100
-	end
     req:nokia6100
-*unpurge2
-	name:unpurge
-	desc:unpurge it JUST IN CASE.
-	cost:0 money
-    passive:
-        show nokia1610
-        show nokia1611
-        show nokia2110
-        show nokia8110
-        show nokia6110
-        show nokia5110
-        show nokia3210
-        show nokia3310
-		show purge1
-		show unpurge1
-		show nokia5510
-		show nokia6100
-    end
-	req:nokia6100
 *symbian
 	name:Symbian OS.
 	desc:Either, 1) Push your R&D money and make the most popular OS before the touchscreen Revolution or 2) Get LESS Nokia Phones but end up with more money for the touchscreen revolution.
@@ -244,36 +189,24 @@ Upgrades
 *android
     name:Android
     desc:Adopt the Robot Operating System Android!
-    passive:
-		hide ios
-		hide nokia
-		hide motorola
-		lower yield of nokia by 24
-		lower yield of motorola by 18.6
-	end
+	passive:hide ios
     cost:400 money
     req:motoc190 or nokia6680
 *ios
     name:iPhone OS (IOS)
     desc:(Try to) Adopt the Tightly integrated Operating System iPhon- I meant IOS!
-    passive:
-		hide android
-		hide nokia
-		hide motorola
-		lower yield of nokia by 24
-		lower yield of motorola by 18.6
-	end
+	passive:hide android
     cost:1250 money
     req:motoc190 or nokia6680
 *samsungunlock
     name:Samsung
     desc:Samsung Electronics has been split, and they don't know what to do with their phones, but the question is: will you accept them?
     passive:
-	hide googleunlock
-	hide htcunlock
-	hide bbkunlock
-    end
-    on earn:yield 1 samsung
+		hide googleunlock
+		hide htcunlock
+		hide bbkunlock
+	end
+	on earn:yield 1 samsung
     cost:500 money
     req:android
 *googleunlock
@@ -283,8 +216,8 @@ Upgrades
 		hide samsungunlock
 		hide htcunlock
 		hide bbkunlock
-    end
-    on earn:yield 1 google
+	end
+	on earn:yield 1 google
     cost:700 money
     req:android
 *htcunlock
@@ -294,28 +227,48 @@ Upgrades
 		hide samsungunlock
 		hide googleunlock
 		hide bbkunlock
-    end
-    on earn:yield 1 htc
-    cost:600 money
-    req:android
+	end
+	on earn:yield 1 htc
+	cost:600 money
+	req:android
 *bbkunlock
-    name:BBK
-    desc:Unlock BBK, China, Multiple brands.
-    passive:
+     name:BBK
+     desc:Unlock BBK, China, Multiple brands.
+	passive:
 		hide samsungunlock
 		hide googleunlock
 		hide htcunlock
-    end
-    on earn:yield 1 oppo
-    cost:900 money
-    req:android
+	end
+	on earn:yield 1 oppo
+	cost:900 money
+	req:android
 *appleunlock
-    name:Apple
+	name:Apple
 	desc:Get apple, because you NEED iOS <//> I WILL BEG FOR THIS!!!
 	on earn:yield 1 apple
 	cost:1500 money
 	req:ios
 *iphone 
-	name:The iPhone
+	name:The iPhone Production
 	desc:You know it, I know it.
-	passive:
+	passive:increase yield of apple by 5
+	cost:500 money
+	req:appleunlock
+*iphone3g
+	name:iPhone 3G Production
+	desc:3G. Epic, I guess? <//>
+	passive:increase yield of apple by 7s
+	cost:750 money
+	req:iphone
+*htcdream
+	name:HTC Dream Production
+	desc:The first Android phone that I can see! <//> my dream phone that i dont want
+	passive:increase yield of htc by 2
+	passive:increase yield of google by 6
+	cost:600 money
+	req:htcunlock or googleunlock
+*htcmagic
+	name:HTC Magic Production
+*iphone3gs
+*htchero
+*
