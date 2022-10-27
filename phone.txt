@@ -292,7 +292,7 @@ Upgrades
 *iphone3g
 	name:iPhone 3G Production
 	desc:3G. Epic, I guess? <//>
-	passive:increase yield of apple by 7s
+	passive:increase yield of apple by 7
 	cost:750 money
 	req:iphone
 *htcdream
