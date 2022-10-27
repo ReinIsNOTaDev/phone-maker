@@ -10,7 +10,7 @@ Let's make a game!
 Settings
 	background:https://pixelartmaker-data-78746291193.nyc3.digitaloceanspaces.com/image/6221603c7dd736d.png
 	building cost increase:100%
-        spritesheet:sprites, 48 by 48, https://raw.githubusercontent.com/ReinIsNOTaDev/phone-maker/03ba801025ec46fe78b0d7a38ee03680f05ee224/phonemakerspritesheet.png
+    spritesheet:sprites, 48 by 48, https://raw.githubusercontent.com/ReinIsNOTaDev/phone-maker/03ba801025ec46fe78b0d7a38ee03680f05ee224/phonemakerspritesheet.png
 Layout
 //TODO: Optimize for Mobile
 use default
@@ -19,21 +19,48 @@ Resources
 	name:Money
 	desc:It's Money. You need a lot of it to evolve off your Nokia Thingy.
 	text:You have [?(this=0)|no money|[this] money], your Money Per Second is [money:ps], and in total you earned [money:earned] money.
+	icon:sprites [1,0]
 Buildings
 //Simply, all brands possible in Phone Maker 2.
 *nokia
 	name:Nokia Factory
 	desc:You start as infamous Nokia. Starting from the 1011, all the way until the 6680.
 	on tick:yield 1 money
-        icon:sprites [0,0]
-	cost:100 money
+	tag:nka
+    icon:sprites [0,0]
+	cost:this:ps*10 money
 	start with:1
 *motorola
 	name:Motorola Factory
 	desc:You now run as Motorola, running away from the mistake that is Symbian.
 	on tick:yield 15 money
-	cost:150 money
+	tag:moto
+	icon:sprites [0,1]
+	cost:this:ps*10 money
 	req:notsymbian
+*htc
+	name:HTC Factory
+	desc:You now run as HTC, because we like corporations that go from popular to obscure
+	on tick:yield 10 money
+	icon:sprites [0,2]
+	cost:this:ps*10 money
+	req:htcunlock
+*samsung
+	name:Samsung Factory
+	desc:You now run as Samsung, because we like south korea (or like their phones)
+	on tick:yield 35 money
+	icon:sprites [0,3]
+	cost:this:ps*10 money
+	req:samsungunlock
+*oppo
+	name:Samsung Factory
+	desc:You now run as Samsung, because we like south korea (or like their phones)
+	on tick:yield 20 money
+	icon:sprites [0,4]
+	cost:this:ps*10 money
+	req:bbkunlock
+*google
+*apple
 Upgrades
 //Progression of Brands. A Little complicated, but you can do it, right?
 *TEMPLATE
@@ -147,7 +174,7 @@ Upgrades
 	passive:
         hide nokia
 	    hide symbian
-        lower yield of nokia by 15.6
+        lose tag:nka
     end
 	on earn:yield 1 motorola
 	cost:100 money
@@ -191,13 +218,19 @@ Upgrades
 *android
     name:Android
     desc:Adopt the Robot Operating System Android!
-	passive:hide ios
+	passive:
+		hide ios
+		lose tag:moto
+	end
     cost:400 money
     req:motoc190 or nokia6680
 *ios
     name:iPhone OS (IOS)
     desc:(Try to) Adopt the Tightly integrated Operating System iPhon- I meant IOS!
-	passive:hide android
+	passive:
+		hide android
+		lose tag:moto
+	end
     cost:1250 money
     req:motoc190 or nokia6680
 *samsungunlock
@@ -270,7 +303,9 @@ Upgrades
 	req:htcunlock
 *htcmagic
 	name:HTC Magic Production
-        desc:The HTC Magic, HTC's second phone. <//> 2nd = best?
-        
+    desc:The HTC Magic, HTC's second phone. <//> 2nd = best?
+    passive:increase yield of htc by 3
+	cost:900 money
+	req:htcdream
 *iphone3gs
 *htchero
