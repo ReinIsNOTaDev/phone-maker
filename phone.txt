@@ -60,8 +60,18 @@ Buildings
 	cost:200 money
 	req:bbkunlock
 *google
+	name:Google Factory
+	desc:You now run as Google, because we like big tech that made android
+	on tick:yield 50 money
+	icon:sprites[4,0]
+	cost:500 money
 	req:googleunlock
 *apple
+	name:Apple Factory
+	desc:You now run as Apple, because we like simple corporations
+	on tick:yield 50 money
+	icon:sprites[5,0]
+	cost:500 money
 	req:appleunlock
 Upgrades
 //Progression of Brands. A Little complicated, but you can do it, right?
@@ -79,31 +89,31 @@ Upgrades
 	name:Nokia 1611 Production
 	desc:The 1610 but with (the ability for) the phone to be solar-powered.
 	passive:increase yield of nokia by 0.6
-	cost:25 money
+	cost:15 money
 	req:nokia1610
 *nokia2110
 	name:Nokia 2110 Production
 	desc:SMS has been equipped. <//> Sooo hard to make descriptions for these things.
 	passive:increase yield of nokia by 1
-	cost:50 money
+	cost:25 money
 	req:nokia1611
 *nokia8110
 	name:Nokia 8110 Production
 	desc:The first Sliding Phone. <//> It slides, what can I say?
 	passive:increase yield of nokia by 1.2
-	cost:75 money
+	cost:12 money
 	req:nokia2110
 *nokia6110
 	name:Nokia 6110 Production
 	desc:First Nokia with infa-red and SNAKE?? <//> Nokia <3 Snake?
 	passive:increase yield of nokia by 1.4
-	cost:125 money
+	cost:14 money
 	req:nokia8110
 *nokia5110
 	name:Nokia 5110 Production
 	desc:The Nokia 6110 but for the CoNsUmErS!
 	passive:increase yield of nokia by 1.6
-	cost:100 money
+	cost:16 money
 	req:nokia6110
 *nokia3210
 	name:Nokia 3210 Production
@@ -293,7 +303,7 @@ Upgrades
 	req:appleunlock
 *iphone3g
 	name:iPhone 3G Production
-	desc:3G. Epic, I guess? <//>
+	desc:3G. Epic, I guess? <//> The Third Generation of Mobile Networks
 	passive:increase yield of apple by 7
 	cost:750 money
 	req:iphone
@@ -310,4 +320,14 @@ Upgrades
 	cost:900 money
 	req:htcdream
 *iphone3gs
-*htchero
+	name:iPhone 3GS Production
+    desc:The iPhone 3G but better and refreshed <//> Does S mean Second, Successor, Siri, or Security?
+    passive:increase yield of apple by 9
+	cost:900 money
+	req:iphone3g
+*galaxys
+	name:Samsung Galaxy S Production
+	desc:Samsung's first android phone. <//> S means Samsung, change my mind
+	
+*
+*
