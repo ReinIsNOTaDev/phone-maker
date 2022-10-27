@@ -19,7 +19,7 @@ Resources
 	name:Money
 	desc:It's Money. You need a lot of it to evolve off your Nokia Thingy.
 	text:You have [?(this=0)|no money|[this] money], your Money Per Second is [money:ps], and in total you earned [money:earned] money.
-	icon:sprites [1,0]
+	icon:sprites[1,0]
 Buildings
 //Simply, all brands possible in Phone Maker 2.
 *nokia
@@ -27,7 +27,7 @@ Buildings
 	desc:You start as infamous Nokia. Starting from the 1011, all the way until the 6680.
 	on tick:yield 1 money
 	tag:nka
-    icon:sprites [0,0]
+    icon:sprites[0,0]
 	cost:this:ps*10 money
 	start with:1
 *motorola
@@ -35,28 +35,28 @@ Buildings
 	desc:You now run as Motorola, running away from the mistake that is Symbian.
 	on tick:yield 15 money
 	tag:moto
-	icon:sprites [0,1]
+	icon:sprites[0,1]
 	cost:this:ps*10 money
 	req:notsymbian
 *htc
 	name:HTC Factory
 	desc:You now run as HTC, because we like corporations that go from popular to obscure
 	on tick:yield 10 money
-	icon:sprites [0,2]
+	icon:sprites[0,2]
 	cost:this:ps*10 money
 	req:htcunlock
 *samsung
 	name:Samsung Factory
 	desc:You now run as Samsung, because we like south korea (or like their phones)
 	on tick:yield 35 money
-	icon:sprites [0,3]
+	icon:sprites[0,3]
 	cost:this:ps*10 money
 	req:samsungunlock
 *oppo
 	name:Samsung Factory
 	desc:You now run as Samsung, because we like south korea (or like their phones)
 	on tick:yield 20 money
-	icon:sprites [0,4]
+	icon:sprites[0,4]
 	cost:this:ps*10 money
 	req:bbkunlock
 *google
