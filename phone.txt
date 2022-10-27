@@ -10,6 +10,7 @@ Let's make a game!
 Settings
 	background:https://pixelartmaker-data-78746291193.nyc3.digitaloceanspaces.com/image/6221603c7dd736d.png
 	building cost increase:100%
+        spritesheet:sprites, 48 by 48, https://raw.githubusercontent.com/ReinIsNOTaDev/phone-maker/03ba801025ec46fe78b0d7a38ee03680f05ee224/phonemakerspritesheet.png
 Layout
 //TODO: Optimize for Mobile
 use default
@@ -24,6 +25,7 @@ Buildings
 	name:Nokia Factory
 	desc:You start as infamous Nokia. Starting from the 1011, all the way until the 6680.
 	on tick:yield 1 money
+        icon:sprites [0,0]
 	cost:100 money
 	start with:1
 *motorola
@@ -264,11 +266,11 @@ Upgrades
 	name:HTC Dream Production
 	desc:The first Android phone that I can see! <//> my dream phone that i dont want
 	passive:increase yield of htc by 2
-	passive:increase yield of google by 6
 	cost:600 money
-	req:htcunlock or googleunlock
+	req:htcunlock
 *htcmagic
 	name:HTC Magic Production
+        desc:The HTC Magic, HTC's second phone. <//> 2nd = best?
+        
 *iphone3gs
 *htchero
-*
