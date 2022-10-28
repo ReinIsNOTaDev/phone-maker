@@ -83,49 +83,49 @@ Upgrades
 	name:Nokia 1610 Production
 	desc:The only reason it's here is to make you NOT Bored. <//> It's the (future) Nokia 2110 but worse.
 	passive:increase yield of nokia by 0.4
-	cost:10 money
+	cost:20 money
 	req:1 nokia
 *nokia1611
 	name:Nokia 1611 Production
 	desc:The 1610 but with (the ability for) the phone to be solar-powered.
 	passive:increase yield of nokia by 0.6
-	cost:15 money
+	cost:30 money
 	req:nokia1610
 *nokia2110
 	name:Nokia 2110 Production
 	desc:SMS has been equipped. <//> Sooo hard to make descriptions for these things.
 	passive:increase yield of nokia by 1
-	cost:25 money
+	cost:50 money
 	req:nokia1611
 *nokia8110
 	name:Nokia 8110 Production
 	desc:The first Sliding Phone. <//> It slides, what can I say?
 	passive:increase yield of nokia by 1.2
-	cost:12 money
+	cost:60 money
 	req:nokia2110
 *nokia6110
 	name:Nokia 6110 Production
 	desc:First Nokia with infa-red and SNAKE?? <//> Nokia <3 Snake?
 	passive:increase yield of nokia by 1.4
-	cost:14 money
+	cost:70 money
 	req:nokia8110
 *nokia5110
 	name:Nokia 5110 Production
 	desc:The Nokia 6110 but for the CoNsUmErS!
 	passive:increase yield of nokia by 1.6
-	cost:16 money
+	cost:80 money
 	req:nokia6110
 *nokia3210
 	name:Nokia 3210 Production
 	desc:The first MASS MARKET phone with internal antenna. <//> The 5110's Cousin!
 	passive:increase yield of nokia by 1.8
-	cost:135 money
+	cost:90 money
 	req:nokia5110
 *nokia3310
 	name:Nokia 3310 Production
 	desc:The Infamous Brick. <//> Also, it's new feature: Chat! Yeah, that is wierd.
 	passive:increase yield of nokia by 2
-	cost:150 money
+	cost:100 money
 	req:nokia3210
 *purge1
     name:PURGE
@@ -161,13 +161,13 @@ Upgrades
 	name:Nokia 5510 Production
 	desc:Couls hold 64mb of music. <//> You do have to use the LSE format.
 	passive:increase yield of nokia by 2.2
-	cost:160 money
+	cost:110 money
 	req:nokia3310
 *nokia6100
 	name:Nokia 6100 production
 	desc:A Popular mid-range Nokia phone. <//> Really, no feature page, just that piece of info.
 	passive:increase yield of nokia by 2.4
-	cost:175 money
+	cost:120 money
 	req:nokia5510
 *purge2
     name:PURGE 2
@@ -195,44 +195,47 @@ Upgrades
 	name:Nokia 7650 Production
 	desc:The first Symbian OS Phone! <//> PrOpIeTaRy TiMe!
 	passive:increase yield of nokia by 2.6
-	cost:200 money
+	cost:195 money
 	req:symbian
 *nokia1100
 	name:Nokia 1100 Production
 	desc:The most popular phone handset. EVER. <//> MONEY MONEY MONEY!!!!
 	passive:increase yield of nokia by 3
-	cost:180 money
+	cost:225 money
 	req:nokia6100
 *nokia6680
 	name:Nokia 6680 Production
 	desc:A HIGH-END symbian phone. <//> Profesoinal be like:
     passive:increase yield of nokia by 2.8
-    cost:225 money
+    cost:210 money
     req:nokia7650
 *motoc139
     name:Motorola C139 Production
     desc:You decided to attack the 1100. You failed, but made the cheapest unlocked GSM device.
     passive:increase yield of motorola by 1
-    cost:100 money
+    cost:40 money
     req:notsymbian
 *motoc168
     name:Motorola C168 Production
     desc:This is boring... <//> Even Wikipedia wasn't able to make proper pages with this.
     passive:increase yield of motorola by 1.2
-    cost:120 money
+    cost:48 money
     req:motoc139
 *motoc190
     name:Motorola C190 Production
     desc:Bluetooth. Yep, that's it. <//> Blue Colored Teeth!
     passive:increase yield of motorola by 1.4
-    cost:150 money
+    cost:56 money
     req:motoc168
 *android
     name:Android
     desc:Adopt the Robot Operating System Android!
 	passive:
 		hide ios
+        hide motorola
 		lose tag:moto
+        hide nokia
+        lose tag:nka
 	end
     cost:400 money
     req:motoc190 or nokia6680
@@ -241,9 +244,12 @@ Upgrades
     desc:(Try to) Adopt the Tightly integrated Operating System iPhon- I meant IOS!
 	passive:
 		hide android
+        hide motorola
 		lose tag:moto
+        hide nokia
+        lose tag:nka
 	end
-    cost:1250 money
+    cost:1000 money
     req:motoc190 or nokia6680
 *samsungunlock
     name:Samsung
@@ -254,7 +260,7 @@ Upgrades
 		hide bbkunlock
 	end
 	on earn:yield 1 samsung
-    cost:500 money
+    cost:550 money
     req:android
 *googleunlock
     name:Google
@@ -265,7 +271,7 @@ Upgrades
 		hide bbkunlock
 	end
 	on earn:yield 1 google
-    cost:700 money
+    cost:650 money
     req:android
 *htcunlock
     name:HTC
@@ -276,7 +282,7 @@ Upgrades
 		hide bbkunlock
 	end
 	on earn:yield 1 htc
-	cost:600 money
+	cost:500 money
 	req:android
 *bbkunlock
      name:BBK
@@ -287,7 +293,7 @@ Upgrades
 		hide htcunlock
 	end
 	on earn:yield 1 oppo
-	cost:900 money
+	cost:800 money
 	req:android
 *appleunlock
 	name:Apple
@@ -305,19 +311,19 @@ Upgrades
 	name:iPhone 3G Production
 	desc:3G. Epic, I guess? <//> The Third Generation of Mobile Networks
 	passive:increase yield of apple by 7
-	cost:750 money
+	cost:700 money
 	req:iphone
 *htcdream
 	name:HTC Dream Production
 	desc:The first Android phone that I can see! <//> my dream phone that i dont want
 	passive:increase yield of htc by 2
-	cost:600 money
+	cost:100 money
 	req:htcunlock
 *htcmagic
 	name:HTC Magic Production
     desc:The HTC Magic, HTC's second phone. <//> 2nd = best?
     passive:increase yield of htc by 3
-	cost:900 money
+	cost:150 money
 	req:htcdream
 *iphone3gs
 	name:iPhone 3GS Production
@@ -328,6 +334,6 @@ Upgrades
 *galaxys
 	name:Samsung Galaxy S Production
 	desc:Samsung's first android phone. <//> S means Samsung, change my mind
-	
+     passive:increase yield of samsung by 
 *
 *
