@@ -22,7 +22,7 @@ Layout
 //TODO: Optimize for Mobile
 use default
 *changelog
-	contains:log
+	contains:Log
 	class:leftplease
 Resources
 *money
@@ -31,6 +31,15 @@ Resources
 	text:You have [?(this=0)|no money|[this] money], your Money Per Second is [money:ps], and in total you earned [money:earned] money.
 	icon:sprites[0,1]
 Buildings
+//changelog logging things
+hidden
+start with:1
+on load:
+toast Hey, you are in the LIVE version. Go to the release version in igm.miro.gg/phonemaker2
+log Welcome to Phone Maker 2! Version 0.1 Public Beta
+log Changelog:
+log Version 0.1: Public Beta Release
+log Released with most nokia phones, some motorola phones, and 3 smartphones per brand.
 //Simply, all brands possible in Phone Maker 2.
 *nokia
 	name:Nokia Factory
