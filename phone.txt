@@ -37,7 +37,7 @@ Buildings
 	desc:You start as infamous Nokia. Starting from the 1011, all the way until the 6680.
 	on tick:
 		yield 1 money
-		if (nokia1610=0 and (chance(25%))) yield 4 money
+		if (no nokia1610 and (chance(25%))) yield 4 money
 	end
 	tag:nka
     icon:sprites[0,0]
