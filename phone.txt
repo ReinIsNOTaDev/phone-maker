@@ -32,6 +32,7 @@ Resources
 	icon:sprites[0,1]
 Buildings
 //changelog logging things
+*logger
 hidden
 start with:1
 on load:
