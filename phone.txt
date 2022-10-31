@@ -11,9 +11,19 @@ Settings
 	background:https://pixelartmaker-data-78746291193.nyc3.digitaloceanspaces.com/image/6221603c7dd736d.png
 	building cost increase:100%
     spritesheet:sprites, 48 by 48, https://raw.githubusercontent.com/ReinIsNOTaDev/phone-maker/03ba801025ec46fe78b0d7a38ee03680f05ee224/phonemakerspritesheet.png
+CSS
+leftplease
+{
+	position: left;
+	height: 200px;
+	width:150px;
+}
 Layout
 //TODO: Optimize for Mobile
 use default
+*changelog
+	contains:log
+	class:leftplease
 Resources
 *nokiaamount
 	always hide
@@ -34,7 +44,7 @@ Buildings
 	end
 	tag:nka
     icon:sprites[0,0]
-	cost:(nokiaamount) money
+	cost:10 money
 	start with:1
 *motorola
 	name:Motorola Factory
@@ -61,9 +71,9 @@ Buildings
 *oppo
 	name:Oppo Factory
 	desc:You now run as Oppo, because.... China?
-	on tick:yield 40 money
+	on tick:yield 80 money
 	icon:sprites[4,0]
-	cost:360 money
+	cost:720 money
 	req:bbkunlock
 *google
 	name:Google Factory
@@ -75,9 +85,9 @@ Buildings
 *apple
 	name:Apple Factory
 	desc:You now run as Apple, because we like simple devices.
-	on tick:yield 100 money
+	on tick:yield 150 money
 	icon:sprites[6,0]
-	cost:1000 money
+	cost:1350 money
 	req:appleunlock
 Upgrades
 //Progression of Brands. A Little complicated, but you can do it, right?
@@ -184,7 +194,7 @@ Upgrades
 	name:Symbian OS.
 	desc:Either, 1) Push your R&D money and make the most popular OS before the touchscreen Revolution or 2) Get LESS Nokia Phones but end up with more money for the touchscreen revolution.
 	passive:hide notsymbian
-	on earn:yield 5 nokiaamount
+	on earn:increase cost of nokia by 5
 	cost:500 money
 	req:nokia6100
 *notsymbian
@@ -265,9 +275,12 @@ Upgrades
 		hide googleunlock
 		hide htcunlock
 		hide bbkunlock
-		hide miunlock
 	end
-	on earn:yield 1 samsung
+	on earn:
+		yield 1 samsung
+		increase yield of samsungnexuss by 206.25
+		increase yield of galaxynexus by 288.75
+	end
     cost:550 money
     req:android
 *googleunlock
@@ -277,9 +290,13 @@ Upgrades
 		hide samsungunlock
 		hide htcunlock
 		hide bbkunlock
-		hide miunlock
 	end
-	on earn:yield 1 google
+	on earn:
+		yield 1 google
+		increase cost of htcnexusone by 195
+		increase cost of samsungnexuss by 243.75
+		increase cost of galaxynexus by 292.5
+	end
     cost:650 money
     req:android
 *htcunlock
@@ -289,9 +306,11 @@ Upgrades
 		hide samsungunlock
 		hide googleunlock
 		hide bbkunlock
-		hide miunlock
 	end
-	on earn:yield 1 htc
+	on earn:
+		yield 1 htc
+		increase cost of htcnexusone by 262.5
+	end
 	cost:500 money
 	req:android
 *bbkunlock
@@ -301,22 +320,9 @@ Upgrades
 		hide samsungunlock
 		hide googleunlock
 		hide htcunlock
-		hide miunlock
 	end
 	on earn:yield 1 oppo
 	cost:800 money
-	req:android
-*miunlock
-	name:Xiaumi
-	desc:Unlock Xiaumi, Multiple Brands, Still China. <//> Is it really more reputable than Huawei?
-	passive:
-		hide samsungunlock
-		hide googleunlock
-		hide htcunlock
-		hide bbkunlock
-	end
-	on earn:yield 1 xiaumi
-	cost:700 money
 	req:android
 *appleunlock
 	name:Apple
@@ -325,22 +331,22 @@ Upgrades
 	cost:1500 money
 	req:ios
 *iphone 
-	name:The iPhone Production
+	name:iPhone Production
 	desc:You know it, I know it.
-	passive:increase yield of apple by 5
-	cost:500 money
+	passive:increase yield of apple by 30
+	cost:450 money
 	req:appleunlock
 *iphone3g
 	name:iPhone 3G Production
-	desc:3G. Epic, I guess? <//> The Third Generation of Mobile Networks
-	passive:increase yield of apple by 7
-	cost:700 money
+	desc:3G. Epic, I guess? <//> The Third Generation of Mobile Networks, now in <i>YOUR</i> hand.
+	passive:increase yield of apple by 37.5
+	cost:562.5 money
 	req:iphone
 *iphone3gs
 	name:iPhone 3GS Production
     desc:The iPhone 3G but better and refreshed <//> Does S mean Second, Successor, Siri, or Security?
-    passive:increase yield of apple by 9
-	cost:900 money
+    passive:increase yield of apple by 450
+	cost:675 money
 	req:iphone3g
 *htcdream
 	name:HTC Dream Production
@@ -369,39 +375,68 @@ Upgrades
 *galaxys2
 	name:Samsung Galxaxy S2 Production
 	desc:The First (I think) dual core samsung phone! <//> Double the cores, Double the Performance!
-	passive:increase yield of samsung by 13.75
-	cost:206.25 money
+	passive:increase yield of samsung by 16.5
+	cost:247.5 money
 	req:galaxys
 *galaxys3
 	name:Samsung Galaxy S3 Production
 	desc:The First Samsung phone to support Wireless Charging <//> Wait, I thought it happened around 2020, right?
-	passive:increase yield of samsung by 16.5
-	cost:247.5 money
+	passive:increase yield of samsung by 22.25
+	cost:333.75 money
 	req:galaxys2
+*htcnexusone
+	name:HTC Nexus One Production
+	desc:A Collaboration between Google and HTC which means.... <//> two companies, one phone?
+	passive:
+		increase yield of htc by 17.5 //maybe higher once later phones are implemented
+		increase yield of google by 13
+	end
+	cost:0 money
+	req:htchero or googleunlock
+	//req:htcdroidiris once I implement it.
+*samsungnexuss
+	name:Samsung Nexus S Production
+	desc:A Collaboration between HTC- no <b>Samsung</b> and Google! <//> It's Probably much better than the original, right?
+	passive:
+		increase yield of samsung by 13.75
+		increase yield of google by 16.25
+	end
+	cost:0 money
+	req:galaxys or htcnexusone
+*galaxynexus
+	name:Samsung Galaxy Nexus Production
+	desc:Once again, (I think) the first dual-core nexus. <//> Got the Galaxy S2 Treatment, eh?
+	passive:
+		increase yield of samsung by 19.25
+		increase yield of google by 19.5
+	end
+	cost:0 money
+	req:galaxys2 or samsungnexuss
+*oppofind5
+	name:Oppo Find 5 Production
+	desc:<b>NOT</b> thier first, but my brain hurts after reserching for this.
+	passive:increase yield of oppo by 16
+	cost:240 money
+	req:bbkunlock
+*oppofind7series
+	name:Oppo Find 7 Series Production
+	desc:Guess what? It isnt a phone, but a phablet. <//> It is basically phone that can't fit baby hands. <//> wow three lines AND it is also a series, Find 7 and Find 7a.
+	passive:increase yield of oppo by 20
+	cost:300 money
+	req:oppofind5
+*oppofindx
+	name:Oppo Find <b>X</b> Production.
+	desc:(proabbly) The first phone with a pop up camera <//> <b>BEZEL INNOVATION!</b>
+	passive:increase yield of oppo by 24
+	cost:360 money
+	req:oppofind7series
 Achievements
+//Achievements, my brain is on fire.
+//Progress Achievements
 *starter
 	name:The Beginning...
 	desc:Welcome to Phone Maker! The game of money, phones, and your sanity.
 	req:1 nokia
-*10money
-	name:The First Steps
-	desc:Get 10 money
-	req:10 money:earned
-*100money
-	name:A Step Up
-	desc:Get 100 money
-	req:100 money:earned
-*10moneyps
-	name:Some food per second
-	desc:Get 10 money per second
-	req:10 money:ps
-*10nokia
-	name:Muti-Production
-	desc:Get 10 Nokia Factories
-	req:10 nokia
-*1000money
-	name:Deep in the Stairwell
-	desc:Get 1,000 money
 *choice1option1
 	name:New Operating System!!!
 	desc:Choose Symbian
@@ -414,14 +449,6 @@ Achievements
 	name:BOTH?????
 	desc:Using some IGM or Game Bug, Choose BOTH OPTIONS??
 	req:symbian and notsymbian
-*10000money
-	name:Too Much In Real Life
-	desc:Get 10,000 money
-	req:10000 money:earned
-*100nokia
-	name:Takes <b>all</b> the space
-	desc:Get 100 Nokia Factories
-	req:100 nokia
 *choice2option1
 	name:Own a Robot, just not a real one
 	desc:Adopt the Operating System Android
@@ -434,6 +461,27 @@ Achievements
 	name:Complication AND SImplicity?
 	desc:As Usual, try and bug the game and get this achievement
 	req:android and ios
+*end
+	name:Goodbye.
+	desc:You completed... The Game. <//> But it is in beta, and may change.
+	req:galaxys3 or iphone3gs or htchero or mi1sseries or galaxynexus or oppor1x
+//Money Earned Achievements
+*10money
+	name:The First Steps
+	desc:Get 10 money
+	req:10 money:earned
+*100money
+	name:A Step Up
+	desc:Get 100 money
+	req:100 money:earned
+*1000money
+	name:Deep in the Stairwell
+	desc:Get 1,000 money
+	req:1000 money:earned
+*10000money
+	name:Too Much In Real Life
+	desc:Get 10,000 money
+	req:10000 money:earned
 *100000money
 	name:Just Out of Millionare-land
 	desc:Get 100,000 money
@@ -450,7 +498,3 @@ Achievements
 	name:It's Million Time BABY!
 	desc:Get 1,000,000 money! <//> Yes, I exist now, as the second line.
 	req:1000000 money:earned
-*end
-	name:Goodbye.
-	desc:You completed... The Game. <//> But it is in beta, and may change.
-	req:galaxys3 or iphone3gs or htchero or mi3 or galaxynexus or oppor1x
