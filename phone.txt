@@ -385,7 +385,8 @@ Upgrades
 	name:HTC Nexus One Production
 	desc:A Collaboration between Google and HTC which means.... <//> two companies, one phone?
 	passive:
-		increase yield of htc by 17.5 //maybe higher once later phones are implemented
+		increase yield of htc by 17.5 
+		//maybe higher once later phones are implemented
 		increase yield of google by 13
 	end
 	cost:0 money
