@@ -1,0 +1,320 @@
+Let's make a game!
+// Factory Maker Details
+	name:Factory Maker (beta)
+	by:TGRein
+// TODO: Update with new links
+	desc:Factory Maker! The game where you make a large Factory using Factories! info in https://discord.com/channels/412363381891137536/1029736616819949658/1029736616819949658 (enter DashNet Forums Discord)
+	created:12/10/2022
+	updated:14/10/2022
+	version:3
+Settings
+	background:https://pixelartmaker-data-78746291193.nyc3.digitaloceanspaces.com/image/6221603c7dd736d.png
+	building cost increase:115%
+// TODO: Finish Atlas in beta
+	spritesheet:atlas, 48 by 48, https://raw.githubusercontent.com/ReinIsNOTaDev/factory-maker/main/spritesheet.png
+Layout
+// TODO: Optimize for Mobile
+use default
+Buttons
+*factory1
+	name:Dirt Factory
+	desc:Here at Dirt Industries, we have the best system for getting money. Manual Labor. So please, click the button.
+	on click:yield 1 money
+	tag:tier1
+	icon:atlas[0,0]
+Resources
+*money
+	name:Money
+	desc:This is used to make more factories to produce more "This" to make more factories to-.
+	text:You have [?(this=0)|no money|[this] money], your Money Per Second is [money:ps], and in total you earned [money:earned] money.
+	icon:atlas[0,1]
+Buildings
+*factory2
+	name:Water Factory
+	desc:Water is Automatic, Right? <//> Produces 0.2 money per second
+	on tick:yield 0.2 money
+	tag:tier1
+	cost:1 money
+	icon:atlas[1,0]
+*factory3
+	name:Tree Factory
+	desc:I like wood! <//> Produces 1 money per second
+	on tick:yield 1 money
+	cost:5 money
+	tag:tier2
+	icon:atlas[2,0]
+	req:upgrade1
+*factory4
+	name:Mud Factory
+	desc:It's just mud, like how much would it make? <//> Produces 0.5 money per second
+	on tick:yield 0.5 money
+	tag:tier2
+	cost:2.5 money
+	icon:atlas[3,0]
+	req:upgrade1
+*factory5
+	name:Cotton Factory
+	desc:Cotton is cool. <//> Produces 2 money per second
+	on tick:yield 2 money
+	tag:tier2
+	cost:10 money
+	req:upgrade1
+*factory6
+	name:Small Mine
+	desc:My Little Mine! <//> Produces 5 money per second
+	on tick:yield 5 money
+	tag:tier3
+	cost:25 money
+	req:upgrade2
+*factory7
+	name:Clay Factory
+	desc:AAAAH THIS IS TOXIC! <//> Procduces 6 money per second
+	on tick:
+		if (chance(50%)) yield 0 money
+			else yield 6 money
+	end
+	tag:tier3
+    cost:30 money
+    req:upgrade2
+*factory8
+    name:Cardboard Factory
+    desc:Shipping? Hello? <//> Produces 8 money per second
+    on tick:yield 8 money
+	tag:tier3
+    cost:40 money
+    req:upgrade2
+*factory9
+    name:Small Furnace
+    desc:Time for Burning! The REAL kind. <//> Produces 10 money per second
+    on tick:yield 10 money
+	tag:tier4
+    cost:50 money
+    req:upgrade3
+*factory10
+    name:Medium Mine
+    desc:You'll get it, and you'll like it. <//> Produces 15 money per second
+    on tick:yield 15 money
+	tag:tier4
+    cost:75 money
+    req:upgrade3
+*factory11
+    name:Polymer Clay Factory
+    desc:A Little less toxic, and A LOT MORE GOOD! <//> Produces 17 money per second
+    on tick:
+		yield 17 money
+		if (chance(25%)) lose 17 money
+		if (chance(50%)) lose 8 money
+	end
+	tag:tier5
+    cost:85 money
+    req:3 factory7
+    req:3 factory9
+*factory12
+    name:Small Packaging Factory
+    desc:So now we can make a shiny brand. Woo? <//> Produces 25 money
+    on tick:yield 25 money
+	tag:tier5
+    cost:125 money
+    req:5 factory8
+    req:5 factory9
+    req:5 factory10
+*factory13
+    name:Alloy Maker
+    desc:Essential for Industrialization. <//> Produces 30 money
+    on tick:yield 30 money
+    cost:150 money
+    req:3 factory12
+    req:7 factory10
+    req:10 factory9
+*factory14
+    name:Shipping Factory
+    desc:Be the FedEx, DHL, or UPS of Your Company. <//> Produces 40 money
+    on tick:yield 40 money
+    cost:200 money
+    req:5 factory12
+    req:2 factory13
+*factory15
+    name:Chemical Factory
+    desc:Take danger to a whole new Level! <//> Produces 50 money per second
+    on tick:yield 50 money
+    on tick:
+		if (chance(5%)) lose 100 money
+		if (chance(15%)) lose 50 money
+		if (chance(25%)) lose 25 money
+		if (chance(50%)) lose 12 money
+	end
+    cost:250 money
+    req:6 factory13
+    req:10 factory10
+*factory16
+    name:Furniture Factory
+    desc:The Ikea of a Bad Company. <//> Produces 55 money per second
+    on tick:yield 55 money
+	cost:275 money
+	req:25 factory3
+    req:8 factory12
+    req:5 factory14
+*factory17
+	name:Medium Furnace
+	desc:BIG BURNS, sorry environment >:) <//> Produces 50 money per second
+    on tick:yield 50 money
+	cost:250 money
+    req:15 factory9
+	req:10 factory10
+    req:7 factory13
+*factory18
+	name:Rubber Tree Factory
+	desc:it was today day when i found out rubber was made from trees. <//> Produces 40 money per second
+	on tick:yield 40 money
+	cost:200 money
+	req:4 factory15
+	req:30 factory3
+	req:3 factory14
+	req:2 factory12
+*factory19
+	name:Plastic Factory
+	desc:POV: when you have the environment <//> Produces 65 money per second
+	on tick:yield 65 money
+	cost:375 money
+	req:6 factory15
+	req:13 factory12
+*factory20
+	name:Pulverizer
+	desc:MaKe It LeSs ExIsTiNg! <//> Produces 55 money per second
+	on tick:yield 55 money
+	cost:400 money
+	req:10 factory17
+*factory21
+	name:Large Mine
+	desc:BIG MINE = BIG MATERIALS <//> Produces 75 money per second
+	on tick:yield 75 money
+	cost:475 money
+	req:20 factory10 
+	req:16 factory13 
+	req:13 factory17 
+	req:7 factory20
+*factory22
+    name:Oil Factory
+    desc:The first step to vehicles. <//> Produces 90 money
+    on tick:
+		if (factory21 is 25) yield 90 money
+		if (factory10 is 50) yield 60 money
+		if (factory6 is 100) yield 30 money
+	end
+    cost:900 money
+    req:10 factory21
+*factory23
+    name:Acrylic Factory
+    desc:Woo it's painting time! <//> Produces 85 money
+    on tick:yield 85 money
+    cost:510 money
+    req:3 factory22
+    req:6 factory21
+*factory24
+    name:Rubber Factory
+    desc:Plastic but less Plastic. <//> Produces 95 money
+    on tick:yield 95 money
+    cost:495 money
+    req:10 factory18
+    req:17 factory15
+*factory25
+    name:Ceramic Factory
+    desc:Plastic for eating. <//> Produces 100 money
+    on tick:yield 100 money
+    cost:500 money
+    req:28 factory11
+    req:8 factory21
+    req:20 factory15
+*factory26
+    name:Polyester Factory
+    desc:You wear it, You like it. <//> Produces 110 money
+    on tick:yield 110 money
+    cost:550 money
+    req:48 factory2
+    req:22 factory15
+    req:8 factory22
+*factory27
+    name:Paint Factory
+    desc:DON'T PUT IT IN YOUR BODY. <//> Produces 115 money
+    on tick:yield 115 money
+    cost:575 money
+    req:19 factory23
+*factory28
+    name:Small Tire Factory
+    desc:The Race to Motorcycles begins. <//> Produces 125 money
+    on tick:yield 125 money
+    cost:625 money
+    req:8 factory24
+*factory29
+    name:Motorcycle Engine Factory
+    desc:vroom vroom! <//> Produces 135 money
+    on tick:yield 135 money
+    cost:675 money
+    req:16 factory21
+    req:14 factory22
+    req:32 factory13
+*factory30
+    name:Motorcycle Body Factory
+    desc:Motorcycles, now in mass production. <//> Produces 140 money
+    on tick:yield 140 money
+    cost:700 money
+    req:18 factory21
+    req:6 factory27
+*factory31
+    name:Medium Packaging Factory
+    desc:A new era, a new packaging factory. <//> Produces 150 money
+    on tick:yield 150 money
+    cost:750 money
+    req:38 factory12
+    req:4 factory29
+    req:2 factory30
+*factory32
+    name:PCB (Printed Circuit Board) Factory
+    desc:time to get making, please? <//> Produces 175 money
+    on tick:yield 175 money
+    cost:875 money
+    req:techupgrade
+*factory33
+	name:Wire Factory
+	desc:Make (VEERY simple) tech! <//> Produces 160 money
+	on tick:yield 160 money
+	cost:800 money
+	req:techupgrade
+Upgrades
+*upgrade1
+    name:Tier 2 Factories
+    desc:this is the plan. For beta anyways
+    cost:20 money
+    passive:increase yield of tag:tier1 by 2
+	req:
+		2 factory1:clicks
+		2 factory2
+	end
+*upgrade2
+    name:Tier 3 Factories
+    desc:CoMPlicAtED! <//> Unlocks Tier 3 Factories
+    cost:20 money
+    passive:
+		increase yield of tag:tier1 by 4
+		increase yield of tag:tier2 by 2
+	end
+	req:upgrade1
+	req:4 factory3
+	req:4 factory4
+	req:4 factory5
+*upgrade3
+    name:Tier 4 Factories
+    desc:Wow not fully made yet. October 13, 2022 <//> Unlocks Tier 4 Factories
+    cost:20 money
+    passive:
+		increase yield of tag:tier1 by 6
+		increase yield of tag:tier2 by 4
+		increase yield of tag:tier3 by 2
+	end
+*upgrade4
+	name:Tier 5 Factories
+	desc:
+*techupgrade
+    name:tech upgrade
+    desc:will be further implemented in beta, unlocks pcbs and wires.
+    cost:500 money
