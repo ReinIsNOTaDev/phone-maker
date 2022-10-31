@@ -41,6 +41,7 @@ log Welcome to Phone Maker 2! Version 0.1 Public Beta
 log Changelog:
 log Version 0.1: Public Beta Release
 log Released with most nokia phones, some motorola phones, and 3 smartphones per brand.
+end
 //Simply, all brands possible in Phone Maker 2.
 *nokia
 	name:Nokia Factory
