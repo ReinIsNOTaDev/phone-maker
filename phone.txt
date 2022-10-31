@@ -14,7 +14,7 @@ Settings
 CSS
 leftplease
 {
-	position: relative;
+	position: absolute;
 	left: 0px;
 	bottom: 0px;
 	width: 150px;
