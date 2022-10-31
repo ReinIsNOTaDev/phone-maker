@@ -9,14 +9,14 @@ Let's make a game!
 	version:1
 Settings
 	background:https://pixelartmaker-data-78746291193.nyc3.digitaloceanspaces.com/image/6221603c7dd736d.png
-	building cost increase:100%
+	building cost increase:110%
     spritesheet:sprites, 48 by 48, https://raw.githubusercontent.com/ReinIsNOTaDev/phone-maker/03ba801025ec46fe78b0d7a38ee03680f05ee224/phonemakerspritesheet.png
 CSS
 leftplease
 {
-	position: left;
+	position: bottom;
 	height: 200px;
-	width:150px;
+	width: 150px;
 }
 Layout
 //TODO: Optimize for Mobile
