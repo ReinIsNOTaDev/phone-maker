@@ -15,6 +15,9 @@ Layout
 //TODO: Optimize for Mobile
 use default
 Resources
+*nokiaamount
+	always hide
+	start with:10
 *money
 	name:Money
 	desc:It's Money. You need a lot of it to evolve off your Nokia Thingy.
@@ -25,10 +28,13 @@ Buildings
 *nokia
 	name:Nokia Factory
 	desc:You start as infamous Nokia. Starting from the 1011, all the way until the 6680.
-	on tick:yield 1 money
+	on tick:
+		yield 1 money
+		if nokia1610=0 and (chance(25%)) yield 4 money
+	end
 	tag:nka
     icon:sprites[0,0]
-	cost:10 money
+	cost:(nokiaamount) money
 	start with:1
 *motorola
 	name:Motorola Factory
@@ -36,42 +42,42 @@ Buildings
 	on tick:yield 15 money
 	tag:moto
 	icon:sprites[1,0]
-	cost:150 money
+	cost:135 money
 	req:notsymbian
 *htc
 	name:HTC Factory
 	desc:You now run as HTC, because we like corporations that go from popular to obscure
-	on tick:yield 10 money
+	on tick:yield 50 money
 	icon:sprites[2,0]
-	cost:100 money
+	cost:450 money
 	req:htcunlock
 *samsung
 	name:Samsung Factory
 	desc:You now run as Samsung, because we like south korea (or like their phones)
 	on tick:yield 35 money
 	icon:sprites[3,0]
-	cost:350 money
+	cost:495 money
 	req:samsungunlock
 *oppo
-	name:Samsung Factory
-	desc:You now run as Samsung, because we like south korea (or like their phones)
-	on tick:yield 20 money
+	name:Oppo Factory
+	desc:You now run as Oppo, because.... China?
+	on tick:yield 40 money
 	icon:sprites[4,0]
-	cost:200 money
+	cost:360 money
 	req:bbkunlock
 *google
 	name:Google Factory
 	desc:You now run as Google, because we like big tech that made android
 	on tick:yield 50 money
-	icon:sprites[4,0]
-	cost:500 money
+	icon:sprites[5,0]
+	cost:585 money
 	req:googleunlock
 *apple
 	name:Apple Factory
-	desc:You now run as Apple, because we like simple corporations
-	on tick:yield 50 money
-	icon:sprites[5,0]
-	cost:500 money
+	desc:You now run as Apple, because we like simple devices.
+	on tick:yield 100 money
+	icon:sprites[6,0]
+	cost:1000 money
 	req:appleunlock
 Upgrades
 //Progression of Brands. A Little complicated, but you can do it, right?
@@ -178,6 +184,7 @@ Upgrades
 	name:Symbian OS.
 	desc:Either, 1) Push your R&D money and make the most popular OS before the touchscreen Revolution or 2) Get LESS Nokia Phones but end up with more money for the touchscreen revolution.
 	passive:hide notsymbian
+	on earn:yield 5 nokiaamount
 	cost:500 money
 	req:nokia6100
 *notsymbian
@@ -201,7 +208,7 @@ Upgrades
 	name:Nokia 1100 Production
 	desc:The most popular phone handset. EVER. <//> MONEY MONEY MONEY!!!!
 	passive:increase yield of nokia by 3
-	cost:225 money
+	cost:150 money
 	req:nokia6100
 *nokia6680
 	name:Nokia 6680 Production
@@ -258,6 +265,7 @@ Upgrades
 		hide googleunlock
 		hide htcunlock
 		hide bbkunlock
+		hide miunlock
 	end
 	on earn:yield 1 samsung
     cost:550 money
@@ -269,6 +277,7 @@ Upgrades
 		hide samsungunlock
 		hide htcunlock
 		hide bbkunlock
+		hide miunlock
 	end
 	on earn:yield 1 google
     cost:650 money
@@ -280,6 +289,7 @@ Upgrades
 		hide samsungunlock
 		hide googleunlock
 		hide bbkunlock
+		hide miunlock
 	end
 	on earn:yield 1 htc
 	cost:500 money
@@ -291,9 +301,22 @@ Upgrades
 		hide samsungunlock
 		hide googleunlock
 		hide htcunlock
+		hide miunlock
 	end
 	on earn:yield 1 oppo
 	cost:800 money
+	req:android
+*miunlock
+	name:Xiaumi
+	desc:Unlock Xiaumi, Multiple Brands, Still China. <//> Is it really more reputable than Huawei?
+	passive:
+		hide samsungunlock
+		hide googleunlock
+		hide htcunlock
+		hide bbkunlock
+	end
+	on earn:yield 1 xiaumi
+	cost:700 money
 	req:android
 *appleunlock
 	name:Apple
@@ -313,27 +336,121 @@ Upgrades
 	passive:increase yield of apple by 7
 	cost:700 money
 	req:iphone
-*htcdream
-	name:HTC Dream Production
-	desc:The first Android phone that I can see! <//> my dream phone that i dont want
-	passive:increase yield of htc by 2
-	cost:100 money
-	req:htcunlock
-*htcmagic
-	name:HTC Magic Production
-    desc:The HTC Magic, HTC's second phone. <//> 2nd = best?
-    passive:increase yield of htc by 3
-	cost:150 money
-	req:htcdream
 *iphone3gs
 	name:iPhone 3GS Production
     desc:The iPhone 3G but better and refreshed <//> Does S mean Second, Successor, Siri, or Security?
     passive:increase yield of apple by 9
 	cost:900 money
 	req:iphone3g
+*htcdream
+	name:HTC Dream Production
+	desc:The first Android phone that I can see! <//> my dream phone that i dont want
+	passive:increase yield of htc by 10
+	cost:150 money
+	req:htcunlock
+*htcmagic
+	name:HTC Magic Production
+    desc:The HTC Magic, HTC's second android phone. <//> 2nd = best?
+    passive:increase yield of htc by 12.5
+	cost:175 money
+	req:htcdream
+*htchero
+	name:HTC Hero Production
+	desc:The HTC Hero, HTC's third android smartphone <//> OUR HEEEROOOOOO that we didnt need.
+	passive:increase yield of htc by 15
+	cost:225 money
+	req:htcmagic
 *galaxys
 	name:Samsung Galaxy S Production
 	desc:Samsung's first android phone. <//> S means Samsung, change my mind
-     passive:increase yield of samsung by 
-*
-*
+    passive:increase yield of samsung by 11
+	cost:165 money
+	req:samsungunlock
+*galaxys2
+	name:Samsung Galxaxy S2 Production
+	desc:The First (I think) dual core samsung phone! <//> Double the cores, Double the Performance!
+	passive:increase yield of samsung by 13.75
+	cost:206.25 money
+	req:galaxys
+*galaxys3
+	name:Samsung Galaxy S3 Production
+	desc:The First Samsung phone to support Wireless Charging <//> Wait, I thought it happened around 2020, right?
+	passive:increase yield of samsung by 16.5
+	cost:247.5 money
+	req:galaxys2
+Achievements
+*starter
+	name:The Beginning...
+	desc:Welcome to Phone Maker! The game of money, phones, and your sanity.
+	req:1 nokia
+*10money
+	name:The First Steps
+	desc:Get 10 money
+	req:10 money:earned
+*100money
+	name:A Step Up
+	desc:Get 100 money
+	req:100 money:earned
+*10moneyps
+	name:Some food per second
+	desc:Get 10 money per second
+	req:10 money:ps
+*10nokia
+	name:Muti-Production
+	desc:Get 10 Nokia Factories
+	req:10 nokia
+*1000money
+	name:Deep in the Stairwell
+	desc:Get 1,000 money
+*choice1option1
+	name:New Operating System!!!
+	desc:Choose Symbian
+	req:symbian
+*choice1option2
+	name:Against Large R&D
+	desc:Choose Motorola
+	req:notsymbian
+*choice1option3
+	name:BOTH?????
+	desc:Using some IGM or Game Bug, Choose BOTH OPTIONS??
+	req:symbian and notsymbian
+*10000money
+	name:Too Much In Real Life
+	desc:Get 10,000 money
+	req:10000 money:earned
+*100nokia
+	name:Takes <b>all</b> the space
+	desc:Get 100 Nokia Factories
+	req:100 nokia
+*choice2option1
+	name:Own a Robot, just not a real one
+	desc:Adopt the Operating System Android
+	req:android
+*choice2option2
+	name:Simplicity.
+	desc:Adopt (and fail to) the simple Operating System (insert whatever iphone uses)
+	req:ios
+*choice2option3
+	name:Complication AND SImplicity?
+	desc:As Usual, try and bug the game and get this achievement
+	req:android and ios
+*100000money
+	name:Just Out of Millionare-land
+	desc:Get 100,000 money
+	req:100000 money:earned
+*420000money
+	name:Welcome to Nice-land!
+	desc:Get 420,000 money. <//> I am (nicely) serius.
+	req:420000 money:earned
+*690000money
+	name:Bye Nice-land!
+	desc:Get 690,000 money. <//> Noice.
+	req:690000 money:earned
+*1000000money
+	name:It's Million Time BABY!
+	desc:Get 1,000,000 money! <//> Yes, I exist now, as the second line.
+	req:1000000 money:earned
+*end
+	name:Goodbye.
+	desc:You completed... The Game. <//> But it is in beta, and may change.
+	req:galaxys3 or iphone3gs or htchero or mi3 or galaxynexus or oppor1x
