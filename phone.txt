@@ -3,7 +3,7 @@ Let's make a game!
 	name:Phone Maker 2
 	by:TGRein
 //TODO: Add the links once done
-	desc:This is Phone Maker 2, My (probably) BIGGEST project. ever. 
+	desc:This is Phone Maker 2, My (probably) BIGGEST project. ever. A game where you make tons of different phones, and make money too.<//>Short link: <u>https://igm.miro.gg/phonemaker2</u><//>────────────────────<//>Changelog:<//>────────────────────<//>Public Beta:<//><//><b>Version 0.1 - 10/21/2022 -  Public Beta Release</b><//><.>LOTS of phones, factories, and achievements<.>And of course, copied lots of things that is <b><i>NOT</I></b> the game from The Lost Labyrinths, <u>miro.gg/TLL</U>
 	created:15/10/2022
 	updated:15/10/2022
 	version:1
@@ -11,21 +11,8 @@ Settings
 	background:https://pixelartmaker-data-78746291193.nyc3.digitaloceanspaces.com/image/6221603c7dd736d.png
 	building cost increase:110%
     spritesheet:sprites, 48 by 48, https://raw.githubusercontent.com/ReinIsNOTaDev/phone-maker/03ba801025ec46fe78b0d7a38ee03680f05ee224/phonemakerspritesheet.png
-CSS
-leftplease
-{
-	position: absolute;
-	left: 0px;
-	bottom: 0px;
-	width: 150px;
-	height: 200px;
-}
 Layout
 //TODO: Optimize for Mobile
-use default
-*changelog
-	contains:Log
-	class:leftplease
 Resources
 *money
 	name:Money
@@ -33,17 +20,6 @@ Resources
 	text:You have [?(this=0)|no money|[this] money], your Money Per Second is [money:ps], and in total you earned [money:earned] money.
 	icon:sprites[0,1]
 Buildings
-//changelog logging things
-*logger
-hidden
-start with:1
-on load:
-toast Hey, you are in the LIVE version. Go to the release version in igm.miro.gg/phonemaker2
-log Welcome to Phone Maker 2! Version 0.1 Public Beta
-log Changelog:
-log Version 0.1: Public Beta Release
-log Released with most nokia phones, some motorola phones, and 3 smartphones per brand.
-end
 //Simply, all brands possible in Phone Maker 2.
 *nokia
 	name:Nokia Factory
