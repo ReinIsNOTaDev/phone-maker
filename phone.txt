@@ -3,35 +3,78 @@ Let's make a game!
 	name:Phone Maker 2
 	by:TGRein
 //TODO: Add the links once done
-	desc:This is Phone Maker 2, My (probably) BIGGEST project. ever. 
+	desc:This is Phone Maker 2, My (probably) BIGGEST project. ever. A game where you make tons of different phones, and make money too.<//>Short link: <u>https://igm.miro.gg/phonemaker2</u><//>────────────────────<//>Changelog:<//>────────────────────<//>Public Beta:<//><//><b>Version 0.1 - 10/21/2022 -  Public Beta Release</b><//><.>LOTS of phones, factories, and achievements<.>And of course, copied lots of things that is <b><i>NOT</I></b> the game from The Lost Labyrinths, <u>miro.gg/TLL</U>
 	created:15/10/2022
 	updated:15/10/2022
 	version:1
 Settings
 	background:https://pixelartmaker-data-78746291193.nyc3.digitaloceanspaces.com/image/6221603c7dd736d.png
-	building cost increase:100%
+	building cost increase:110%
+    spritesheet:sprites, 48 by 48, https://raw.githubusercontent.com/ReinIsNOTaDev/phone-maker/03ba801025ec46fe78b0d7a38ee03680f05ee224/phonemakerspritesheet.png
 Layout
 //TODO: Optimize for Mobile
-use default
 Resources
 *money
 	name:Money
 	desc:It's Money. You need a lot of it to evolve off your Nokia Thingy.
 	text:You have [?(this=0)|no money|[this] money], your Money Per Second is [money:ps], and in total you earned [money:earned] money.
+	icon:sprites[0,1]
 Buildings
 //Simply, all brands possible in Phone Maker 2.
 *nokia
 	name:Nokia Factory
 	desc:You start as infamous Nokia. Starting from the 1011, all the way until the 6680.
-	on tick:yield 1 money
-	cost:100 money
+	on tick:
+		yield 1 money
+		if (no nokia1610 and (chance(25%))) yield 4 money
+	end
+	tag:nka
+    icon:sprites[0,0]
+	cost:10 money
 	start with:1
 *motorola
 	name:Motorola Factory
 	desc:You now run as Motorola, running away from the mistake that is Symbian.
 	on tick:yield 15 money
-	cost:150 money
+	tag:moto
+	icon:sprites[1,0]
+	cost:135 money
 	req:notsymbian
+*htc
+	name:HTC Factory
+	desc:You now run as HTC, because we like corporations that go from popular to obscure
+	on tick:yield 50 money
+	icon:sprites[2,0]
+	cost:450 money
+	req:htcunlock
+*samsung
+	name:Samsung Factory
+	desc:You now run as Samsung, because we like south korea (or like their phones)
+	on tick:yield 35 money
+	icon:sprites[3,0]
+	cost:495 money
+	req:samsungunlock
+*oppo
+	name:Oppo Factory
+	desc:You now run as Oppo, because.... China?
+	on tick:yield 80 money
+	icon:sprites[4,0]
+	cost:720 money
+	req:bbkunlock
+*google
+	name:Google Factory
+	desc:You now run as Google, because we like big tech that made android
+	on tick:yield 50 money
+	icon:sprites[5,0]
+	cost:585 money
+	req:googleunlock
+*apple
+	name:Apple Factory
+	desc:You now run as Apple, because we like simple devices.
+	on tick:yield 150 money
+	icon:sprites[6,0]
+	cost:1350 money
+	req:appleunlock
 Upgrades
 //Progression of Brands. A Little complicated, but you can do it, right?
 *TEMPLATE
@@ -42,13 +85,13 @@ Upgrades
 	name:Nokia 1610 Production
 	desc:The only reason it's here is to make you NOT Bored. <//> It's the (future) Nokia 2110 but worse.
 	passive:increase yield of nokia by 0.4
-	cost:10 money
+	cost:20 money
 	req:1 nokia
 *nokia1611
 	name:Nokia 1611 Production
 	desc:The 1610 but with (the ability for) the phone to be solar-powered.
 	passive:increase yield of nokia by 0.6
-	cost:25 money
+	cost:30 money
 	req:nokia1610
 *nokia2110
 	name:Nokia 2110 Production
@@ -60,31 +103,31 @@ Upgrades
 	name:Nokia 8110 Production
 	desc:The first Sliding Phone. <//> It slides, what can I say?
 	passive:increase yield of nokia by 1.2
-	cost:75 money
+	cost:60 money
 	req:nokia2110
 *nokia6110
 	name:Nokia 6110 Production
 	desc:First Nokia with infa-red and SNAKE?? <//> Nokia <3 Snake?
 	passive:increase yield of nokia by 1.4
-	cost:125 money
+	cost:70 money
 	req:nokia8110
 *nokia5110
 	name:Nokia 5110 Production
 	desc:The Nokia 6110 but for the CoNsUmErS!
 	passive:increase yield of nokia by 1.6
-	cost:100 money
+	cost:80 money
 	req:nokia6110
 *nokia3210
 	name:Nokia 3210 Production
 	desc:The first MASS MARKET phone with internal antenna. <//> The 5110's Cousin!
 	passive:increase yield of nokia by 1.8
-	cost:135 money
+	cost:90 money
 	req:nokia5110
 *nokia3310
 	name:Nokia 3310 Production
 	desc:The Infamous Brick. <//> Also, it's new feature: Chat! Yeah, that is wierd.
 	passive:increase yield of nokia by 2
-	cost:150 money
+	cost:100 money
 	req:nokia3210
 *purge1
     name:PURGE
@@ -120,13 +163,13 @@ Upgrades
 	name:Nokia 5510 Production
 	desc:Couls hold 64mb of music. <//> You do have to use the LSE format.
 	passive:increase yield of nokia by 2.2
-	cost:160 money
+	cost:110 money
 	req:nokia3310
 *nokia6100
 	name:Nokia 6100 production
 	desc:A Popular mid-range Nokia phone. <//> Really, no feature page, just that piece of info.
 	passive:increase yield of nokia by 2.4
-	cost:175 money
+	cost:120 money
 	req:nokia5510
 *purge2
     name:PURGE 2
@@ -137,6 +180,7 @@ Upgrades
 	name:Symbian OS.
 	desc:Either, 1) Push your R&D money and make the most popular OS before the touchscreen Revolution or 2) Get LESS Nokia Phones but end up with more money for the touchscreen revolution.
 	passive:hide notsymbian
+	on earn:increase cost of nokia by 5
 	cost:500 money
 	req:nokia6100
 *notsymbian
@@ -145,7 +189,7 @@ Upgrades
 	passive:
         hide nokia
 	    hide symbian
-        lower yield of nokia by 15.6
+        lose tag:nka
     end
 	on earn:yield 1 motorola
 	cost:100 money
@@ -154,49 +198,61 @@ Upgrades
 	name:Nokia 7650 Production
 	desc:The first Symbian OS Phone! <//> PrOpIeTaRy TiMe!
 	passive:increase yield of nokia by 2.6
-	cost:200 money
+	cost:195 money
 	req:symbian
 *nokia1100
 	name:Nokia 1100 Production
 	desc:The most popular phone handset. EVER. <//> MONEY MONEY MONEY!!!!
 	passive:increase yield of nokia by 3
-	cost:180 money
+	cost:150 money
 	req:nokia6100
 *nokia6680
 	name:Nokia 6680 Production
 	desc:A HIGH-END symbian phone. <//> Profesoinal be like:
     passive:increase yield of nokia by 2.8
-    cost:225 money
+    cost:210 money
     req:nokia7650
 *motoc139
     name:Motorola C139 Production
     desc:You decided to attack the 1100. You failed, but made the cheapest unlocked GSM device.
     passive:increase yield of motorola by 1
-    cost:100 money
+    cost:40 money
     req:notsymbian
 *motoc168
     name:Motorola C168 Production
     desc:This is boring... <//> Even Wikipedia wasn't able to make proper pages with this.
     passive:increase yield of motorola by 1.2
-    cost:120 money
+    cost:48 money
     req:motoc139
 *motoc190
     name:Motorola C190 Production
     desc:Bluetooth. Yep, that's it. <//> Blue Colored Teeth!
     passive:increase yield of motorola by 1.4
-    cost:150 money
+    cost:56 money
     req:motoc168
 *android
     name:Android
     desc:Adopt the Robot Operating System Android!
-	passive:hide ios
+	passive:
+		hide ios
+        hide motorola
+		lose tag:moto
+        hide nokia
+        lose tag:nka
+	end
     cost:400 money
     req:motoc190 or nokia6680
 *ios
     name:iPhone OS (IOS)
     desc:(Try to) Adopt the Tightly integrated Operating System iPhon- I meant IOS!
-	passive:hide android
-    cost:1250 money
+	passive:
+		hide android
+        hide motorola
+		lose tag:moto
+        hide nokia
+        lose tag:nka
+	end
+    cost:1000 money
     req:motoc190 or nokia6680
 *samsungunlock
     name:Samsung
@@ -206,8 +262,12 @@ Upgrades
 		hide htcunlock
 		hide bbkunlock
 	end
-	on earn:yield 1 samsung
-    cost:500 money
+	on earn:
+		yield 1 samsung
+		increase yield of samsungnexuss by 206.25
+		increase yield of galaxynexus by 288.75
+	end
+    cost:550 money
     req:android
 *googleunlock
     name:Google
@@ -217,8 +277,13 @@ Upgrades
 		hide htcunlock
 		hide bbkunlock
 	end
-	on earn:yield 1 google
-    cost:700 money
+	on earn:
+		yield 1 google
+		increase cost of htcnexusone by 195
+		increase cost of samsungnexuss by 243.75
+		increase cost of galaxynexus by 292.5
+	end
+    cost:650 money
     req:android
 *htcunlock
     name:HTC
@@ -228,8 +293,11 @@ Upgrades
 		hide googleunlock
 		hide bbkunlock
 	end
-	on earn:yield 1 htc
-	cost:600 money
+	on earn:
+		yield 1 htc
+		increase cost of htcnexusone by 262.5
+	end
+	cost:500 money
 	req:android
 *bbkunlock
      name:BBK
@@ -240,7 +308,7 @@ Upgrades
 		hide htcunlock
 	end
 	on earn:yield 1 oppo
-	cost:900 money
+	cost:800 money
 	req:android
 *appleunlock
 	name:Apple
@@ -249,26 +317,171 @@ Upgrades
 	cost:1500 money
 	req:ios
 *iphone 
-	name:The iPhone Production
+	name:iPhone Production
 	desc:You know it, I know it.
-	passive:increase yield of apple by 5
-	cost:500 money
+	passive:increase yield of apple by 30
+	cost:450 money
 	req:appleunlock
 *iphone3g
 	name:iPhone 3G Production
-	desc:3G. Epic, I guess? <//>
-	passive:increase yield of apple by 7s
-	cost:750 money
+	desc:3G. Epic, I guess? <//> The Third Generation of Mobile Networks, now in <i>YOUR</i> hand.
+	passive:increase yield of apple by 37.5
+	cost:562.5 money
 	req:iphone
+*iphone3gs
+	name:iPhone 3GS Production
+    desc:The iPhone 3G but better and refreshed <//> Does S mean Second, Successor, Siri, or Security?
+    passive:increase yield of apple by 450
+	cost:675 money
+	req:iphone3g
 *htcdream
 	name:HTC Dream Production
 	desc:The first Android phone that I can see! <//> my dream phone that i dont want
-	passive:increase yield of htc by 2
-	passive:increase yield of google by 6
-	cost:600 money
-	req:htcunlock or googleunlock
+	passive:increase yield of htc by 10
+	cost:150 money
+	req:htcunlock
 *htcmagic
 	name:HTC Magic Production
-*iphone3gs
+    desc:The HTC Magic, HTC's second android phone. <//> 2nd = best?
+    passive:increase yield of htc by 12.5
+	cost:175 money
+	req:htcdream
 *htchero
-*
+	name:HTC Hero Production
+	desc:The HTC Hero, HTC's third android smartphone <//> OUR HEEEROOOOOO that we didnt need.
+	passive:increase yield of htc by 15
+	cost:225 money
+	req:htcmagic
+*galaxys
+	name:Samsung Galaxy S Production
+	desc:Samsung's first android phone. <//> S means Samsung, change my mind
+    passive:increase yield of samsung by 11
+	cost:165 money
+	req:samsungunlock
+*galaxys2
+	name:Samsung Galxaxy S2 Production
+	desc:The First (I think) dual core samsung phone! <//> Double the cores, Double the Performance!
+	passive:increase yield of samsung by 16.5
+	cost:247.5 money
+	req:galaxys
+*galaxys3
+	name:Samsung Galaxy S3 Production
+	desc:The First Samsung phone to support Wireless Charging <//> Wait, I thought it happened around 2020, right?
+	passive:increase yield of samsung by 22.25
+	cost:333.75 money
+	req:galaxys2
+*htcnexusone
+	name:HTC Nexus One Production
+	desc:A Collaboration between Google and HTC which means.... <//> two companies, one phone?
+	passive:
+		increase yield of htc by 17.5 
+		//maybe higher once later phones are implemented
+		increase yield of google by 13
+	end
+	cost:0 money
+	req:htchero or googleunlock
+	//req:htcdroidiris once I implement it.
+*samsungnexuss
+	name:Samsung Nexus S Production
+	desc:A Collaboration between HTC- no <b>Samsung</b> and Google! <//> It's Probably much better than the original, right?
+	passive:
+		increase yield of samsung by 13.75
+		increase yield of google by 16.25
+	end
+	cost:0 money
+	req:galaxys or htcnexusone
+*galaxynexus
+	name:Samsung Galaxy Nexus Production
+	desc:Once again, (I think) the first dual-core nexus. <//> Got the Galaxy S2 Treatment, eh?
+	passive:
+		increase yield of samsung by 19.25
+		increase yield of google by 19.5
+	end
+	cost:0 money
+	req:galaxys2 or samsungnexuss
+*oppofind5
+	name:Oppo Find 5 Production
+	desc:<b>NOT</b> thier first, but my brain hurts after reserching for this.
+	passive:increase yield of oppo by 16
+	cost:240 money
+	req:bbkunlock
+*oppofind7series
+	name:Oppo Find 7 Series Production
+	desc:Guess what? It isnt a phone, but a phablet. <//> It is basically phone that can't fit baby hands. <//> wow three lines AND it is also a series, Find 7 and Find 7a.
+	passive:increase yield of oppo by 20
+	cost:300 money
+	req:oppofind5
+*oppofindx
+	name:Oppo Find <b>X</b> Production.
+	desc:(proabbly) The first phone with a pop up camera <//> <b>BEZEL INNOVATION!</b>
+	passive:increase yield of oppo by 24
+	cost:360 money
+	req:oppofind7series
+Achievements
+//Achievements, my brain is on fire.
+//Progress Achievements
+*starter
+	name:The Beginning...
+	desc:Welcome to Phone Maker! The game of money, phones, and your sanity.
+	req:1 nokia
+*choice1option1
+	name:New Operating System!!!
+	desc:Choose Symbian
+	req:symbian
+*choice1option2
+	name:Against Large R&D
+	desc:Choose Motorola
+	req:notsymbian
+*choice1option3
+	name:BOTH?????
+	desc:Using some IGM or Game Bug, Choose BOTH OPTIONS??
+	req:symbian and notsymbian
+*choice2option1
+	name:Own a Robot, just not a real one
+	desc:Adopt the Operating System Android
+	req:android
+*choice2option2
+	name:Simplicity.
+	desc:Adopt (and fail to) the simple Operating System (insert whatever iphone uses)
+	req:ios
+*choice2option3
+	name:Complication AND SImplicity?
+	desc:As Usual, try and bug the game and get this achievement
+	req:android and ios
+*gameend
+	name:Goodbye.
+	desc:You completed... The Game. <//> But it is in beta, and may change.
+	req:galaxys3 or iphone3gs or htchero or galaxynexus or oppofindx
+//Money Earned Achievements
+*10money
+	name:The First Steps
+	desc:Get 10 money
+	req:10 money:earned
+*100money
+	name:A Step Up
+	desc:Get 100 money
+	req:100 money:earned
+*1000money
+	name:Deep in the Stairwell
+	desc:Get 1,000 money
+	req:1000 money:earned
+*10000money
+	name:Too Much In Real Life
+	desc:Get 10,000 money
+	req:10000 money:earned
+*100000money
+	name:Just Out of Millionare-land
+	desc:Get 100,000 money
+	req:100000 money:earned
+*420000money
+	name:Welcome to Nice-land!
+	desc:Get 420,000 money. <//> I am (nicely) serius.
+	req:420000 money:earned
+*690000money
+	name:Bye Nice-land!
+	desc:Get 690,000 money. <//> Noice.
+	req:690000 money:earned
+*1000000money
+	name:It's Million Time BABY!
+	desc:Get 1,000,000 money! <//> Yes, I exist now, as the second line.
+	req:1000000 money:earned
