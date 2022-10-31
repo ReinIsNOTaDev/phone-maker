@@ -462,7 +462,7 @@ Achievements
 *gameend
 	name:Goodbye.
 	desc:You completed... The Game. <//> But it is in beta, and may change.
-	req:galaxys3 or iphone3gs or htchero or galaxynexus or oppor1x
+	req:galaxys3 or iphone3gs or htchero or galaxynexus or oppofindx
 //Money Earned Achievements
 *10money
 	name:The First Steps
