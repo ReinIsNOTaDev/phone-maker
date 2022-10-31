@@ -25,9 +25,6 @@ use default
 	contains:log
 	class:leftplease
 Resources
-*nokiaamount
-	always hide
-	start with:10
 *money
 	name:Money
 	desc:It's Money. You need a lot of it to evolve off your Nokia Thingy.
