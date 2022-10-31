@@ -458,7 +458,7 @@ Achievements
 	name:Complication AND SImplicity?
 	desc:As Usual, try and bug the game and get this achievement
 	req:android and ios
-*end
+*gameend
 	name:Goodbye.
 	desc:You completed... The Game. <//> But it is in beta, and may change.
 	req:galaxys3 or iphone3gs or htchero or mi1sseries or galaxynexus or oppor1x
