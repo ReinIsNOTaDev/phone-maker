@@ -14,9 +14,11 @@ Settings
 CSS
 leftplease
 {
-	position: bottom;
-	height: 200px;
+	position: relative;
+	left: 0px;
+	bottom: 0px;
 	width: 150px;
+	height: 200px;
 }
 Layout
 //TODO: Optimize for Mobile
