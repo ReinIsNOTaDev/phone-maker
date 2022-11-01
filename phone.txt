@@ -3,13 +3,13 @@ Let's make a game!
 	name:Phone Maker 2
 	by:TGRein
 //TODO: Add the links once done
-	desc:This is Phone Maker 2, My (probably) BIGGEST project. ever. A game where you make tons of different phones, and make money too.<//>Short link: <u>https://igm.miro.gg/phonemaker2</u><//>────────────────────<//>Changelog:<//>────────────────────<//>Public Beta:<//><//><b>Version 0.1 - 10/21/2022 -  Public Beta Release</b><//><.>LOTS of phones, factories, and achievements<.>And of course, copied lots of things that is <b><i>NOT</I></b> the game from The Lost Labyrinths, <u>miro.gg/TLL</U>
-	created:15/10/2022
+	desc:This is Phone Maker 2, My (probably) BIGGEST project. ever. A game where you make tons of different phones, and make money too.<//>Short link: <u>https://miro.gg/phonemaker2</u><//>Current version: Version 0.1.1 - 11/1/2022 - Bugfix 1<//><.>Updated the Update Date<.>Increased the Building Cost Increase from 110% to 125%<.>Fix bug when Factories would be lost, and the player is softlocked in the choice2 area.<.>Added a Current Version, showing the version of the game, and the update's changelog.<//><//>────────────────────<//>Changelog:<//>────────────────────<//>Public Beta:<//><//><b>Version 0.1 - 10/21/2022 -  Public Beta Release</b><//><.>LOTS of phones, factories, and achievements<.>And of course, copied lots of things that is <b><i>NOT</I></b> the game from The Lost Labyrinths, <u>miro.gg/TLL</U><//>Version 0.1.1 - 11/1/2022 - Bugfix 1<//><.>Updated the Update Date<.>Increased the Building Cost Increase from 110% to 125%<.>Fix bug when Factories would be lost, and the player is softlocked in the choice2 area.<.>Added a Current Version, showing the version of the game, and the update's changelog.
+	created:01/11/2022
 	updated:15/10/2022
 	version:1
 Settings
 	background:https://pixelartmaker-data-78746291193.nyc3.digitaloceanspaces.com/image/6221603c7dd736d.png
-	building cost increase:110%
+	building cost increase:125%
     spritesheet:sprites, 48 by 48, https://raw.githubusercontent.com/ReinIsNOTaDev/phone-maker/03ba801025ec46fe78b0d7a38ee03680f05ee224/phonemakerspritesheet.png
 Layout
 //TODO: Optimize for Mobile
@@ -235,10 +235,6 @@ Upgrades
     desc:Adopt the Robot Operating System Android!
 	passive:
 		hide ios
-        hide motorola
-		lose tag:moto
-        hide nokia
-        lose tag:nka
 	end
     cost:400 money
     req:motoc190 or nokia6680
@@ -247,10 +243,6 @@ Upgrades
     desc:(Try to) Adopt the Tightly integrated Operating System iPhon- I meant IOS!
 	passive:
 		hide android
-        hide motorola
-		lose tag:moto
-        hide nokia
-        lose tag:nka
 	end
     cost:1000 money
     req:motoc190 or nokia6680
@@ -261,6 +253,10 @@ Upgrades
 		hide googleunlock
 		hide htcunlock
 		hide bbkunlock
+		hide motorola
+		lose tag:moto
+        hide nokia
+        lose tag:nka
 	end
 	on earn:
 		yield 1 samsung
@@ -276,6 +272,10 @@ Upgrades
 		hide samsungunlock
 		hide htcunlock
 		hide bbkunlock
+		hide motorola
+		lose tag:moto
+        hide nokia
+        lose tag:nka
 	end
 	on earn:
 		yield 1 google
@@ -292,6 +292,10 @@ Upgrades
 		hide samsungunlock
 		hide googleunlock
 		hide bbkunlock
+		hide motorola
+		lose tag:moto
+        hide nokia
+        lose tag:nka
 	end
 	on earn:
 		yield 1 htc
@@ -306,6 +310,10 @@ Upgrades
 		hide samsungunlock
 		hide googleunlock
 		hide htcunlock
+		hide motorola
+		lose tag:moto
+        hide nokia
+        lose tag:nka
 	end
 	on earn:yield 1 oppo
 	cost:800 money
@@ -313,7 +321,13 @@ Upgrades
 *appleunlock
 	name:Apple
 	desc:Get apple, because you NEED iOS <//> I WILL BEG FOR THIS!!!
-	on earn:yield 1 apple
+	on earn:
+		yield 1 apple
+		hide motorola
+		lose tag:moto
+        hide nokia
+        lose tag:nka
+	end
 	cost:1500 money
 	req:ios
 *iphone 
