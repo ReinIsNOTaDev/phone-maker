@@ -443,6 +443,15 @@ Upgrades
 	end
 	cost:0 money
 	req:galaxys2 or samsungnexuss
+*lgnexus4
+    name:LG Nexus 4 Production
+    desc:The first Nexus to have Wireless Charging capabilities. <//> operation unwire phase 1
+    tag:nov2012
+    passive:
+        increase yield of google by 22.75
+    end
+    cost:0 money
+    req:galaxynexus
 //bbk phone line (oppo find, oppo a, oneplus number, realme number, realme c, and realme gt)
 *oppofind5
 	name:Oppo Find 5 Production
