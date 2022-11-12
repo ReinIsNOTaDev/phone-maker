@@ -3,7 +3,7 @@ Let's make a game!
 	name:Phone Maker 2
 	by:TGRein
 //TODO: Add the links once done
-	desc:This is Phone Maker 2, My (probably) BIGGEST project. ever. A game where you make tons of different phones, and make money too.<//>Short link: <u>https://miro.gg/phonemaker2</u><//>Current version: Version 0.1.1 - 11/1/2022 - Bugfix 1<//><.>Updated the Update Date<.>Increased the Building Cost Increase from 110% to 125%<.>Fix bug when Factories would be lost, and the player is softlocked in the choice2 area.<.>Added a Current Version, showing the version of the game, and the update's changelog.<//><//>────────────────────<//>Changelog:<//>────────────────────<//>Public Beta:<//><//><b>Version 0.1 - 10/21/2022 -  Public Beta Release</b><//><.>LOTS of phones, factories, and achievements<.>And of course, copied lots of things that is <b><i>NOT</I></b> the game from The Lost Labyrinths, <u>miro.gg/TLL</U><//>Version 0.1.1 - 11/1/2022 - Bugfix 1<//><.>Updated the Update Date<.>Increased the Building Cost Increase from 110% to 125%<.>Fix bug when Factories would be lost, and the player is softlocked in the choice2 area.<.>Added a Current Version, showing the version of the game, and the update's changelog.
+	desc:This is Phone Maker 2, My (probably) BIGGEST project. ever. A game where you make tons of different phones, and make money too.<//>Short link: <u>https://miro.gg/phonemaker2</u><//>Current version: Version 0.1.1 - 11/1/2022 - Bugfix 1<//><.>Updated the Update Date<.>Increased the Building Cost Increase from 110% to 125%<.>Fix bug when Factories would be lost, and the player is softlocked in the choice2 area.<.>Added a Current Version, showing the version of the game, and the update's changelog.<//><//>────────────────────<//>Changelog:<//>────────────────────<//>Public Beta:<//><//><b>Version 0.1 - 10/21/2022 -  Public Beta Release</b><//><.>LOTS of phones, factories, and achievements<.>And of course, copied lots of things that is <b><i>NOT</I></b> the game from The Lost Labyrinths, <u>miro.gg/TLL</U><//>Version 0.1.1 - 11/1/2022 - Bugfix 1<//><.>Updated the Update Date<.>Increased the Building Cost Increase from 110% to 125%<.>Fix bug when Factories would be lost, and the player is softlocked in the choice2 area.<.>Added a Current Version, showing the version of the game, and the update's changelog.<//>Version 0.2 - 11/4/2022 - Multi-brand update and ONE MORE PHONE!<//><.>Added OnePlus under Oppo<.>ONE MORE PHONE!<.>Todo: Make LG and Xiaumi<.>Added lots of //notes (notes) in the game<.>Removed "(future)" from Nokia 1610
 	created:01/11/2022
 	updated:15/10/2022
 	version:1
@@ -83,7 +83,7 @@ Upgrades
 	desc:this is what we call a quility control mistake. Let's hope Rein fixes it.
 *nokia1610
 	name:Nokia 1610 Production
-	desc:The only reason it's here is to make you NOT Bored. <//> It's the (future) Nokia 2110 but worse.
+	desc:The only reason it's here is to make you NOT Bored. <//> It's the Nokia 2110 but worse.
 	passive:increase yield of nokia by 0.4
 	cost:20 money
 	req:1 nokia
@@ -330,66 +330,94 @@ Upgrades
 	end
 	cost:1500 money
 	req:ios
+//apple phone line (iphone)
 *iphone 
 	name:iPhone Production
 	desc:You know it, I know it.
+	tag:june2007
 	passive:increase yield of apple by 30
 	cost:450 money
 	req:appleunlock
 *iphone3g
 	name:iPhone 3G Production
 	desc:3G. Epic, I guess? <//> The Third Generation of Mobile Networks, now in <i>YOUR</i> hand.
+	tag:june2008
 	passive:increase yield of apple by 37.5
 	cost:562.5 money
 	req:iphone
 *iphone3gs
 	name:iPhone 3GS Production
     desc:The iPhone 3G but better and refreshed <//> Does S mean Second, Successor, Siri, or Security?
-    passive:increase yield of apple by 450
+	tag:june2009
+    passive:increase yield of apple by 45
 	cost:675 money
 	req:iphone3g
+*iphone4
+	name:iPhone 4 Production
+	desc:The first iPhone to include a front-facing camera <//> "This changes Everything. Again."
+	tag:june2010
+	passive:increase yield of apple by 52.5
+	cost:787.5 money
+	req:iphone3gs
+//htc phone line (random phones, droid, and desire only)
 *htcdream
 	name:HTC Dream Production
 	desc:The first Android phone that I can see! <//> my dream phone that i dont want
+	tag:oct2008
 	passive:increase yield of htc by 10
 	cost:150 money
 	req:htcunlock
 *htcmagic
 	name:HTC Magic Production
     desc:The HTC Magic, HTC's second android phone. <//> 2nd = best?
+	tag:jan2009
     passive:increase yield of htc by 12.5
 	cost:175 money
 	req:htcdream
 *htchero
 	name:HTC Hero Production
-	desc:The HTC Hero, HTC's third android smartphone <//> OUR HEEEROOOOOO that we didnt need.
+	desc:The first HTC phone with The Sense Interface <//> OUR HEEEROOOOOO that we didnt need.
+	tag:july2009
 	passive:increase yield of htc by 15
 	cost:225 money
 	req:htcmagic
+*htctatoo
+	name:HTC Tatoo Production
+	desc:The first smartphone from the company with fully customisable covers. <//> It died later.
+	tag:oct2009
+	passive:increase yield of htc by 17.5
+	cost:275 money
+	req:htchero
+//samsung phone line (s and alpha/a series)
 *galaxys
 	name:Samsung Galaxy S Production
 	desc:Samsung's first android phone. <//> S means Samsung, change my mind
+	tag:mar2010
     passive:increase yield of samsung by 11
 	cost:165 money
 	req:samsungunlock
 *galaxys2
 	name:Samsung Galxaxy S2 Production
 	desc:The First (I think) dual core samsung phone! <//> Double the cores, Double the Performance!
+	tag:feb2011
 	passive:increase yield of samsung by 16.5
 	cost:247.5 money
 	req:galaxys
 *galaxys3
 	name:Samsung Galaxy S3 Production
 	desc:The First Samsung phone to support Wireless Charging <//> Wait, I thought it happened around 2020, right?
+	tag:may2012
 	passive:increase yield of samsung by 22.25
 	cost:333.75 money
 	req:galaxys2
+//google phone line (nexus and pixel line)
 *htcnexusone
 	name:HTC Nexus One Production
 	desc:A Collaboration between Google and HTC which means.... <//> two companies, one phone?
+	tag:jan2010
 	passive:
 		increase yield of htc by 17.5 
-		//maybe higher once later phones are implemented
+		//maybe higher once later phones are implemented ^
 		increase yield of google by 13
 	end
 	cost:0 money
@@ -398,6 +426,7 @@ Upgrades
 *samsungnexuss
 	name:Samsung Nexus S Production
 	desc:A Collaboration between HTC- no <b>Samsung</b> and Google! <//> It's Probably much better than the original, right?
+	tag:dec2010
 	passive:
 		increase yield of samsung by 13.75
 		increase yield of google by 16.25
@@ -407,30 +436,50 @@ Upgrades
 *galaxynexus
 	name:Samsung Galaxy Nexus Production
 	desc:Once again, (I think) the first dual-core nexus. <//> Got the Galaxy S2 Treatment, eh?
+	tag:nov2011
 	passive:
 		increase yield of samsung by 19.25
 		increase yield of google by 19.5
 	end
 	cost:0 money
 	req:galaxys2 or samsungnexuss
+//bbk phone line (oppo find, oppo a, oneplus number, realme number, realme c, and realme gt)
 *oppofind5
 	name:Oppo Find 5 Production
 	desc:<b>NOT</b> thier first, but my brain hurts after reserching for this.
+	tag:feb2013
 	passive:increase yield of oppo by 16
 	cost:240 money
 	req:bbkunlock
 *oppofind7series
 	name:Oppo Find 7 Series Production
 	desc:Guess what? It isnt a phone, but a phablet. <//> It is basically phone that can't fit baby hands. <//> wow three lines AND it is also a series, Find 7 and Find 7a.
+	tag:mar2014
 	passive:increase yield of oppo by 20
 	cost:300 money
+	req:oppofind5
+*oneplusunlock
+	name:OnePlus
+	desc:Spin-off a new brand and make OnePlus! <//> One.... Plus.... <b>OnePlus!</b>
+	cost:500 money
+	req:oppofind5
+*oneplusone
+	name:OnePlus One
+	desc:The One, the Only, The "2014 flagship killer" <//> budget money maker
+	tag:apr2014
+	passive:increase yield of oppo by 8
+	cost:160 money
 	req:oppofind5
 *oppofindx
 	name:Oppo Find <b>X</b> Production.
 	desc:(proabbly) The first phone with a pop up camera <//> <b>BEZEL INNOVATION!</b>
-	passive:increase yield of oppo by 24
+	tag:june2018
+	passive:
+		increase yield of oppo by 24
+		if (oneplusone is 1) increase yield of oppo by 2
+	end
 	cost:360 money
-	req:oppofind7series
+	req:oppofind7series and oneplusone
 Achievements
 //Achievements, my brain is on fire.
 //Progress Achievements
