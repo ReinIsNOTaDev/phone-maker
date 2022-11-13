@@ -282,6 +282,7 @@ Upgrades
 		increase cost of htcnexusone by 195
 		increase cost of samsungnexuss by 243.75
 		increase cost of galaxynexus by 292.5
+		increase cost of lgnexus4 by 341.25
 	end
     cost:650 money
     req:android
@@ -402,14 +403,15 @@ Upgrades
 	tag:feb2011
 	passive:increase yield of samsung by 16.5
 	cost:247.5 money
-	req:galaxys
+	req:samsungnexuss
 *galaxys3
 	name:Samsung Galaxy S3 Production
 	desc:The First Samsung phone to support Wireless Charging <//> Wait, I thought it happened around 2020, right?
 	tag:may2012
 	passive:increase yield of samsung by 22.25
 	cost:333.75 money
-	req:galaxys2
+	req:galaxynexus
+*galaxys4
 //google phone line (nexus and pixel line)
 *htcnexusone
 	name:HTC Nexus One Production
@@ -442,7 +444,7 @@ Upgrades
 		increase yield of google by 19.5
 	end
 	cost:0 money
-	req:galaxys2 or samsungnexuss
+	req:galaxys2 or (samsungnexuss and googleunlock)
 *lgnexus4
     name:LG Nexus 4 Production
     desc:The first Nexus to have Wireless Charging capabilities. <//> operation unwire phase 1
