@@ -359,6 +359,14 @@ Upgrades
 	passive:increase yield of apple by 52.5
 	cost:787.5 money
 	req:iphone3gs
+*iphone4s
+    name:iPhone 4S Production
+    desc:The final iPhone announced by Steve Jobs. <q>"Remember, the S stands for Siri!"</q>
+    tag:oct2011
+    passive:increase yield of apple by 60
+    cost:900 money
+    req:iphone4
+*iphone5
 //htc phone line (random phones, droid, and desire only)
 *htcdream
 	name:HTC Dream Production
