@@ -2,7 +2,7 @@ Let's make a game!
 //Welcome to the Phone Maker 2 Code! I don't even know if this is possible.
 	name:Phone Maker 2
 	by:TGRein
-	desc:This is Phone Maker 2, My (probably) BIGGEST project. ever. A game where you make tons of different phones, and make money too.<//>Short link: <u>https://miro.gg/phonemaker2</u><//>Current version: Version 0.2 - 11/13/2022 - Multi-brand update and ONE MORE PHONE!<//><.>Added OnePlus under Oppo<.>ONE MORE PHONE! except htc.... sowy!<.>Todo: Make LG and Xiaumi<.>Added lots of //notes (notes) in the game<.>Removed "(future)" from Nokia 1610<//><//>────────────────────<//>Changelog:<//>────────────────────<//>Public Beta:<//><//><b>Version 0.1 - 10/21/2022 -  Public Beta Release</b><//><.>LOTS of phones, factories, and achievements<.>And of course, copied lots of things that is <b><i>NOT</I></b> the game from The Lost Labyrinths, <u>miro.gg/TLL</U><//>Version 0.1.1 - 11/1/2022 - Bugfix 1<//><.>Updated the Update Date<.>Increased the Building Cost Increase from 110% to 125%<.>Fix bug when Factories would be lost, and the player is softlocked in the choice2 area.<.>Added a Current Version, showing the version of the game, and the update's changelog.<//>Version 0.2 - 11/13/2022 - Multi-brand update and ONE MORE PHONE!<//><.>Added OnePlus under Oppo<.>ONE MORE PHONE! except htc.... sowy!<.>Todo: Make LG and Xiaumi<.>Added lots of //notes (notes) in the game<.>Removed "(future)" from Nokia 1610
+	desc:This is Phone Maker 2, My (probably) BIGGEST project. ever. A game where you make tons of different phones, and make money too.<//>Short link: <u>https://miro.gg/phonemaker2</u><//>Current version: Version 0.2 - 11/13/2022 - Multi-brand update and ONE MORE PHONE!<//><.>Added OnePlus under Oppo<.>ONE MORE PHONE! except htc.... sowy!<.>Todo: Make LG and Xiaumi<.>Added lots of //notes (notes) in the game<.>Removed "(future)" from Nokia 1610<//><//>────────────────────<//>Changelog:<//>────────────────────<//>Public Beta:<//><//><b>Version 0.1 - 10/21/2022 -  Public Beta Release</b><//><.>LOTS of phones, factories, and achievements<.>And of course, copied lots of things that is <b><i>NOT</I></b> the game from The Lost Labyrinths, <u>miro.gg/TLL</U><//>Version 0.1.1 - 11/1/2022 - Bugfix 1<//><.>Updated the Update Date<.>Increased the Building Cost Increase from 110% to 125%<.>Fix bug when Factories would be lost, and the player is softlocked in the choice2 area.<.>Added a Current Version, showing the version of the game, and the update's changelog.<//>Version 0.2 - 11/13/2022 - Multi-brand update and ONE MORE PHONE!<//><.>Added OnePlus under Oppo<.>ONE MORE PHONE! except htc.... sowy!<.>Todo: Make LG and Xiaumi<.>Added lots of //notes (notes) in the game<.>Removed "(future)" from Nokia 1610<//>Version 0.3 - 11/19/2022<//><.>Adds 2 more phones per Smartphone Brand<.>Added LG (6 Phones)
 	created:01/11/2022
 	updated:15/10/2022
 	version:1
@@ -62,7 +62,7 @@ Buildings
 	req:bbkunlock
 *lg
 	name:LG Factory
-	desc:You now run as LG because.......... You aren't smart i guess? Life is [?optimuss|not good|good]
+	desc:You now run as LG because.......... You aren't smart i guess? Life is [?lgg2|not good|good]
 	on tick:yield 60 money
 	cost:540 money
 	req:lgunlock
