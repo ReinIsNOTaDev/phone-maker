@@ -345,6 +345,7 @@ Upgrades
 	end
 	on earn:
 		yield 1 lg
+        increase cost of lgnexus4 by 360
 	end
 	cost:600 money
 	req:android
@@ -526,18 +527,20 @@ Upgrades
     tag:nov2012
     passive:
         increase yield of google by 22.75
+        increase yield of lg by 24
     end
     cost:0 money
-    req:galaxynexus
+    req:galaxynexus or lgoptimus4xhd
 *lgnexus5
     name:LG Nexus 5 Production
     desc:The launch device for Android 4.4 KitKat <q>"uhhhhh, there's not that much here sir..."</q>
     tag:oct2013
     passive:
         increase yield of google by 26
+        increase yield of lg by 33
     end
     cost:0 money
-    req:lgnexus4
+    req:(lgnexus4 and googleunlock) or lgg2
 *motonexus6
     name:Motorola Nexus 6 Production
     desc:The launch device for Android 5.0 Lolipop. [?notsymbian|<q>I've seen this before!</q>|<q>I don't feel good about this...</q>]
@@ -581,7 +584,7 @@ Upgrades
     passive:increase yield of oppo by 14
     cost:280 money
     req:oneplusone
-*oppoa33
+*2015oppoa33
     name:Oppo A33 (2015) Production
     desc:The first A Series phone... I guess? <q>"wikipedia, PLEASE HELP ME!"</q>
     tag:nov2015
@@ -595,7 +598,7 @@ Upgrades
 		if (oneplusone is 1) increase yield of oppo by 2
 	end
 	cost:360 money
-	req:oppofind7series and oneplusone
+	req:2015oppoa33
 //lg phones (optimus series, g, v, velvet, wind + weird one-offs)
 *lgoptimus
 	name:LG Optimus Production
@@ -620,9 +623,25 @@ Upgrades
 	req:lgoptimusone
 *lgoptimus4xhd
 	name:LG Optimus 4X HD Production
+    desc:The world-first smartphone with a quad-core proccesor, together with the HTC One X and Samsung Galaxy S3. <q>"why does it have hd?"</q>
 	tag:june2012
+	passive:increase yield of lg by 21
+	cost:315 money
+    req:lgoptimus2x
 *lgoptimusg
+    name:LG Optimus G Production
+    desc:Very similar to the Nexus 4. <q>"It's in 2 <b>brands</b>?"</q>
+    tag:nov2012
+    passive:increase yield of lg by 27
+    cost:405 money
+    req:lgnexus4 and lgunlock
 *lgg2
+    name:LG G2 Production
+    desc:It has a 1080P IPS LCD Display and a high-fidelity sound system. <q>"Congrats! you got Achievement: Not that complicated series by lg"</q>
+    tag:sep2013
+    passive:increase yield of lg by 30
+    cost:450 money
+    req:lgoptimusg
 Achievements
 //Achievements, my brain is on fire.
 //Progress Achievements
