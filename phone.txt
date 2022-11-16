@@ -282,6 +282,8 @@ Upgrades
 		increase cost of samsungnexuss by 243.75
 		increase cost of galaxynexus by 292.5
 		increase cost of lgnexus4 by 341.25
+		increase cost of lgnexus5 by 390
+		increase cost of motonexus6 by 438.75
 	end
     cost:650 money
     req:android
@@ -340,50 +342,64 @@ Upgrades
 	req:appleunlock
 *iphone3g
 	name:iPhone 3G Production
-	desc:3G. Epic, I guess? <//> The Third Generation of Mobile Networks, now in <i>YOUR</i> hand.
+	desc:3G. Epic, I guess? <q>"The Third Generation of Mobile Networks, now in <i>YOUR</i> hand."</q>
 	tag:june2008
 	passive:increase yield of apple by 37.5
 	cost:562.5 money
 	req:iphone
 *iphone3gs
 	name:iPhone 3GS Production
-    desc:The iPhone 3G but better and refreshed <//> Does S mean Second, Successor, Siri, or Security?
+    desc:The iPhone 3G but better and refreshed <q>"Does S mean Second, Successor, Siri, or Security?"</q>
 	tag:june2009
     passive:increase yield of apple by 45
 	cost:675 money
 	req:iphone3g
 *iphone4
 	name:iPhone 4 Production
-	desc:The first iPhone to include a front-facing camera <//> "This changes Everything. Again."
+	desc:The first iPhone to include a front-facing camera <q>"This changes Everything. Again."</q>
 	tag:june2010
 	passive:increase yield of apple by 52.5
 	cost:787.5 money
 	req:iphone3gs
+*iphone4s
+    name:iPhone 4S Production
+    desc:The final iPhone announced by Steve Jobs. <q>"Remember, the S stands for Siri!"</q>
+    tag:oct2011
+    passive:increase yield of apple by 60
+    cost:900 money
+    req:iphone4
+*iphone5
+    name:iPhone 5 Production
+    desc: The first iPhone to be completely developed by Tim Cook. <q>"New Generational Design!"</q>
+    tag:sep2012
+    passive:increase yield of apple by  67.5
+    cost:1012.5 money
+    req:iphone4s
 //htc phone line (random phones, droid, and desire only)
 *htcdream
 	name:HTC Dream Production
-	desc:The first Android phone that I can see! <//> my dream phone that i dont want
+	desc:The first Android phone that I can see! <q>"my dream phone that i dont want"</q>
 	tag:oct2008
 	passive:increase yield of htc by 10
 	cost:150 money
 	req:htcunlock
 *htcmagic
 	name:HTC Magic Production
-    desc:The HTC Magic, HTC's second android phone. <//> 2nd = best?
+    desc:The HTC Magic, HTC's second android phone. <q>"2nd = best?"</q>
 	tag:jan2009
     passive:increase yield of htc by 12.5
 	cost:175 money
 	req:htcdream
 *htchero
 	name:HTC Hero Production
-	desc:The first HTC phone with The Sense Interface <//> OUR HEEEROOOOOO that we didnt need.
+	desc:The first HTC phone with The Sense Interface <q>"OUR HEEEROOOOOO that we didnt need."</q>
 	tag:july2009
 	passive:increase yield of htc by 15
 	cost:225 money
 	req:htcmagic
 *htctatoo
 	name:HTC Tatoo Production
-	desc:The first smartphone from the company with fully customisable covers. <//> It died later.
+	desc:The first smartphone from the company with fully customisable covers. <q>"It died later."</q>
 	tag:oct2009
 	passive:increase yield of htc by 17.5
 	cost:262.5 money
@@ -395,17 +411,24 @@ Upgrades
 	passive:increase yield of htc by 20
 	cost:300 money
 	req:htctatoo
+*htcdesire
+    name:HTC Desire Production
+    desc:Very similar to the Nexus One. <q>"It used 2 display technologies in it's lifetime!"</q>
+    tag:feb2010
+    passive:increase yield of htc by 25
+    cost:375 money
+    req:htcnexusone
 //samsung phone line (s and alpha/a series)
 *galaxys
 	name:Samsung Galaxy S Production
-	desc:Samsung's first android phone. <//> S means Samsung, change my mind
+	desc:Samsung's first android phone. <q>"S means Samsung, change my mind"</q>
 	tag:mar2010
     passive:increase yield of samsung by 11
 	cost:165 money
 	req:samsungunlock
 *galaxys2
 	name:Samsung Galxaxy S2 Production
-	desc:The First (I think) dual core samsung phone! <//> Double the cores, Double the Performance!
+	desc:The First (I think) dual core samsung phone! <q>Double the cores, Double the Performance!
 	tag:feb2011
 	passive:increase yield of samsung by 16.5
 	cost:247.5 money
@@ -424,10 +447,24 @@ Upgrades
 	passive:increase yield of samsung by 25
 	cost:375 money
 	req:galaxys3
+*galaxys5
+    name:Samsung Galaxy S5 Production
+    desc:It adds IP67 water resistance, a fingerprint scanner, the ability to record 4K videos. <q>"insert your fingers, please"</q>
+    tag:feb2014
+    passive:increase yield of samsung by 27.75
+    cost:416.25
+    req:galaxys4
+*galaxys6series
+    name:Samsung Galaxy S6/6 Edge Production
+    desc:Ability to charge the phone with Qualcomm Quick Charge 2.0! and it's a series <q>"It's two phones, in ONE sitting!"</q>
+    tag:mar2015
+    passive:increase yield of samsung by 34.25
+    cost:498.75 money
+    req:galaxys5
 //google phone line (nexus and pixel line)
 *htcnexusone
 	name:HTC Nexus One Production
-	desc:A Collaboration between Google and HTC which means.... <//> two companies, one phone?
+	desc:A Collaboration between Google and HTC which means.... <q>"two companies, one phone?"</q>
 	tag:jan2010
 	passive:
 		increase yield of htc by 22.5
@@ -437,7 +474,7 @@ Upgrades
 	req:htcdroidiris or googleunlock
 *samsungnexuss
 	name:Samsung Nexus S Production
-	desc:A Collaboration between HTC- no <b>Samsung</b> and Google! <//> It's Probably much better than the original, right?
+	desc:A Collaboration between HTC- no <b>Samsung</b> and Google! <q>"It's Probably much better than the original, right?"</q>
 	tag:dec2010
 	passive:
 		increase yield of samsung by 13.75
@@ -447,7 +484,7 @@ Upgrades
 	req:galaxys or htcnexusone
 *galaxynexus
 	name:Samsung Galaxy Nexus Production
-	desc:Once again, (I think) the first dual-core nexus. <//> Got the Galaxy S2 Treatment, eh?
+	desc:Once again, (I think) the first dual-core nexus. <q>"Got the Galaxy S2 Treatment, eh?"</q>
 	tag:nov2011
 	passive:
 		increase yield of samsung by 19.25
@@ -457,13 +494,31 @@ Upgrades
 	req:galaxys2 or (samsungnexuss and googleunlock)
 *lgnexus4
     name:LG Nexus 4 Production
-    desc:The first Nexus to have Wireless Charging capabilities. <//> operation unwire phase 1
+    desc:The first Nexus to have Wireless Charging capabilities. <q>"operation unwire phase 1'</q>
     tag:nov2012
     passive:
         increase yield of google by 22.75
     end
     cost:0 money
     req:galaxynexus
+*lgnexus5
+    name:LG Nexus 5 Production
+    desc:The launch device for Android 4.4 KitKat <q>"uhhhhh, there's not that much here sir..."</q>
+    tag:oct2013
+    passive:
+        increase yield of google by 26
+    end
+    cost:0 money
+    req:lgnexus4
+*motonexus6
+    name:Motorola Nexus 6 Production
+    desc:The launch device for Android 5.0 Lolipop. [?notsymbian|<q>I've seen this before!</q>|<q>I don't feel good about this...</q>]
+    tag:oct2014
+    passive:
+        increase yield of google by 29.25
+    end
+    cost:0 money
+    req:lgnexus5
 //bbk phone line (oppo find, oppo a, oneplus number, realme number, realme c, and realme gt)
 *oppofind5
 	name:Oppo Find 5 Production
@@ -474,26 +529,38 @@ Upgrades
 	req:bbkunlock
 *oppofind7series
 	name:Oppo Find 7 Series Production
-	desc:Guess what? It isnt a phone, but a phablet. <//> It is basically phone that can't fit baby hands. <//> wow three lines AND it is also a series, Find 7 and Find 7a.
+	desc:Guess what? It isnt a phone, but a phablet. Also a series. <q>"It is basically phone that can't fit baby hands."</q>
 	tag:mar2014
 	passive:increase yield of oppo by 20
 	cost:300 money
 	req:oppofind5
 *oneplusunlock
 	name:OnePlus
-	desc:Spin-off a new brand and make OnePlus! <//> One.... Plus.... <b>OnePlus!</b>
+	desc:Spin-off a new brand and make OnePlus! <q>"One.... Plus.... <b>OnePlus!</b>"</q>
 	cost:500 money
-	req:oppofind5
+	req:oppofind7series
 *oneplusone
-	name:OnePlus One
-	desc:The One, the Only, The "2014 flagship killer" <//> budget money maker
+	name:OnePlus One Production
+	desc:The One, the Only, The "2014 flagship killer" <q>"budget money maker"</q>
 	tag:apr2014
 	passive:increase yield of oppo by 8
 	cost:160 money
-	req:oppofind5
+	req:oneplusunlock
+*oneplus2
+    name:OnePlus 2 Production
+    desc:The "2016 flagship killer" <q>"again here?"</q>
+    tag:july2015
+    passive:increase yield of oppo by 14
+    cost:280 money
+    req:oneplusone
+*oppoa33
+    name:Oppo A33 (2015) Production
+    desc:The first A Series phone... I guess? <q>"wikipedia, PLEASE HELP ME!"</q>
+    tag:nov2015
+    req:oneplus2
 *oppofindx
 	name:Oppo Find <b>X</b> Production.
-	desc:(proabbly) The first phone with a pop up camera <//> <b>BEZEL INNOVATION!</b>
+	desc:(proabbly) The first phone with a pop up camera <q>"<b>BEZEL INNOVATION!</b>"</q>
 	tag:june2018
 	passive:
 		increase yield of oppo by 24
