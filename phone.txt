@@ -60,6 +60,12 @@ Buildings
 	icon:sprites[4,0]
 	cost:720 money
 	req:bbkunlock
+*lg
+	name:LG Factory
+	desc:You now run as LG because.......... You aren't smart i guess? Life is [?optimuss|not good|good]
+	on tick:yield 60 money
+	cost:540 money
+	req:lgunlock
 *google
 	name:Google Factory
 	desc:You now run as Google, because we like big tech that made android
@@ -252,6 +258,7 @@ Upgrades
 		hide googleunlock
 		hide htcunlock
 		hide bbkunlock
+		hide lgunlock
 		hide motorola
 		lose tag:moto
         hide nokia
@@ -271,6 +278,7 @@ Upgrades
 		hide samsungunlock
 		hide htcunlock
 		hide bbkunlock
+		hide lgunlock
 		hide motorola
 		lose tag:moto
         hide nokia
@@ -294,6 +302,7 @@ Upgrades
 		hide samsungunlock
 		hide googleunlock
 		hide bbkunlock
+		hide lgunlock
 		hide motorola
 		lose tag:moto
         hide nokia
@@ -312,6 +321,7 @@ Upgrades
 		hide samsungunlock
 		hide googleunlock
 		hide htcunlock
+		hide lgunlock
 		hide motorola
 		lose tag:moto
         hide nokia
@@ -319,6 +329,24 @@ Upgrades
 	end
 	on earn:yield 1 oppo
 	cost:800 money
+	req:android
+*lgunlock
+	name:LG
+	desc:If you are in Public Beta/1.0, It's not that bad. In the FUTURE? You would be insane if you chose it (remember, it does not exist anymore.)
+    passive:
+		hide samsungunlock
+		hide htcunlock
+		hide bbkunlock
+		hide lgunlock
+		hide motorola
+		lose tag:moto
+        hide nokia
+        lose tag:nka
+	end
+	on earn:
+		yield 1 lg
+	end
+	cost:600 money
 	req:android
 *appleunlock
 	name:Apple
@@ -568,6 +596,33 @@ Upgrades
 	end
 	cost:360 money
 	req:oppofind7series and oneplusone
+//lg phones (optimus series, g, v, velvet, wind + weird one-offs)
+*lgoptimus
+	name:LG Optimus Production
+	desc:The First in a non-complicated jungle of phones, and it's ANDROID! <q>"Optimus Prime"</q>
+	tag:june2010
+	passive:increase yield of lg by 12
+	cost:180 money
+	req:lgunlock
+*lgoptimusone
+	name:LG Optimus One Production
+	desc:help me, wikipedia doesnt have info about this. <q>"LG, what is this naming?"</q>
+	tag:oct2010
+	passive:increase yield of lg by 15
+	cost:225 money
+	req:lgoptimus
+*lgoptimus2x
+	name:LG Optimus 2X Production
+	desc:The world-first smartphone with a dual-core processor. <q>"It's better than LG Optimus One One I guess..."</q>
+	tag:feb2011
+	passive:increase yield of lg by 18
+	cost:270 money
+	req:lgoptimusone
+*lgoptimus4xhd
+	name:LG Optimus 4X HD Production
+	tag:june2012
+*lgoptimusg
+*lgg2
 Achievements
 //Achievements, my brain is on fire.
 //Progress Achievements
