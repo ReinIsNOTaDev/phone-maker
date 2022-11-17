@@ -2,10 +2,10 @@ Let's make a game!
 //Welcome to the Phone Maker 2 Code! I don't even know if this is possible.
 	name:Phone Maker 2
 	by:TGRein
-	desc:This is Phone Maker 2, My (probably) BIGGEST project. ever. A game where you make tons of different phones, and make money too.<//>Short link: <u>https://miro.gg/phonemaker2</u><//>Current version: Version 0.2 - 11/13/2022 - Multi-brand update and ONE MORE PHONE!<//><.>Added OnePlus under Oppo<.>ONE MORE PHONE! except htc.... sowy!<.>Todo: Make LG and Xiaumi<.>Added lots of //notes (notes) in the game<.>Removed "(future)" from Nokia 1610<//><//>────────────────────<//>Changelog:<//>────────────────────<//>Public Beta:<//><//><b>Version 0.1 - 10/21/2022 -  Public Beta Release</b><//><.>LOTS of phones, factories, and achievements<.>And of course, copied lots of things that is <b><i>NOT</I></b> the game from The Lost Labyrinths, <u>miro.gg/TLL</U><//>Version 0.1.1 - 11/1/2022 - Bugfix 1<//><.>Updated the Update Date<.>Increased the Building Cost Increase from 110% to 125%<.>Fix bug when Factories would be lost, and the player is softlocked in the choice2 area.<.>Added a Current Version, showing the version of the game, and the update's changelog.<//>Version 0.2 - 11/13/2022 - Multi-brand update and ONE MORE PHONE!<//><.>Added OnePlus under Oppo<.>ONE MORE PHONE! except htc.... sowy!<.>Todo: Make LG and Xiaumi<.>Added lots of //notes (notes) in the game<.>Removed "(future)" from Nokia 1610<//>Version 0.3 - 11/19/2022<//><.>Adds 2 more phones per Smartphone Brand<.>Added LG (6 Phones)
+	desc:This is Phone Maker 2, My (probably) BIGGEST project. ever. A game where you make tons of different phones, and make money too.<//>Short link: <u>https://miro.gg/phonemaker2</u><//>Current version: <b>Version 0.3 - 11/19/2022 - Just In Time</b><//><.>Adds 2 more phones per Smartphone Brand<.>Added LG (6 Phones)<.>Changed Requirements for The End.<.>The Great <q>"quotation"</q><.>Added Changelog for Pre Versions<//><//>────────────────────<//>Changelog:<//>────────────────────<//>Public Beta:<//><//><b>Version 0.1 - 10/21/2022 -  Public Beta Release</b><//><.>LOTS of phones, factories, and achievements<.>And of course, copied lots of things that is <b><i>NOT</I></b> the game from The Lost Labyrinths, <u>miro.gg/TLL</U><//><b>Version 0.1.1 - 11/1/2022 - Bugfix 1</b><//><.>Updated the Update Date<.>Increased the Building Cost Increase from 110% to 125%<.>Fix bug when Factories would be lost, and the player is softlocked in the choice2 area.<.>Added a Current Version, showing the version of the game, and the update's changelog.<//><b>Version 0.2 - 11/13/2022 - Multi-brand update and ONE MORE PHONE!</b><//><.>Added OnePlus under Oppo<.>ONE MORE PHONE! except htc.... sowy!<.>Todo: Make LG and Xiaumi<.>Added lots of //notes (notes) in the game<.>Removed "(future)" from Nokia 1610<//><b>Version 0.3 - 11/19/2022 - Just In Time</b><//><.>Adds 2 more phones per Smartphone Brand<.>Added LG (6 Phones)<.>Changed Requirements for The End.<.>The Great <q>"quotation"</q><.>Added Changelog for Pre Versions<.>Version now means how MANY versions have passed (including -Pre Versions)<//>────────────────────<//>Pre-Release Versions<//>────────────────────<//>Public Beta Live:<//><//>Version 0.3-Pre1 - 11/15/2022 - One Phone at a time<//><.>Added iPhone 4S Production<.>Added possibility for iPhone 5 Production<//>Version 0.3-Pre2 - 11/16/2022 - I may have finished it already....<.>Added All Needed Phones<.>The Great <q>"quotation"</q><//>Version 0.3-Pre4 - 11/17/2022 - I forgot Something...<//><.>Added LG (6 Phones)<.>Actually Updated the update date<.>Added Pre-Release Version Changelog<.>Changed Samsung Phone Lineup from Samsung S6 Series to Samsung Alpha<.>Version now means how MANY versions have passed (including -Pre Versions)
 	created:01/11/2022
-	updated:15/10/2022
-	version:1
+	updated:17/11/2022
+	version:7
 Settings
 	background:https://pixelartmaker-data-78746291193.nyc3.digitaloceanspaces.com/image/6221603c7dd736d.png
 	building cost increase:125%
@@ -483,10 +483,10 @@ Upgrades
     passive:increase yield of samsung by 27.75
     cost:416.25
     req:galaxys4
-*galaxys6series
-    name:Samsung Galaxy S6/6 Edge Production
-    desc:Ability to charge the phone with Qualcomm Quick Charge 2.0! and it's a series <q>"It's two phones, in ONE sitting!"</q>
-    tag:mar2015
+*galaxyalpha
+    name:Samsung Galaxy Alpha Production
+    desc:The first in the long A Series of Samsung Galaxy A Series. <q>"Say A...."</q>
+    tag:sep2014
     passive:increase yield of samsung by 34.25
     cost:498.75 money
     req:galaxys5
@@ -648,7 +648,7 @@ Achievements
 *starter
 	name:The Beginning...
 	desc:Welcome to Phone Maker! The game of money, phones, and your sanity.
-	req:1 nokia
+	req:1 nokia:earned
 *choice1option1
 	name:New Operating System!!!
 	desc:Choose Symbian
@@ -676,7 +676,7 @@ Achievements
 *gameend
 	name:Goodbye.
 	desc:You completed... The Game. <//> But it is in beta, and may change.
-	req:galaxys3 or iphone3gs or htchero or galaxynexus or oppofindx
+	req:(appleunlock and iphone 5) or (googleunlock and motonexus6) or (samsungunlock and galaxyalpha) or (htcunlock and htcnexusone) or (bbkunlock and oppofindx) or (lgunlock and lgg2)
 //Money Earned Achievements
 *10money
 	name:The First Steps
