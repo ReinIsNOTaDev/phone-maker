@@ -345,7 +345,8 @@ Upgrades
 	end
 	on earn:
 		yield 1 lg
-        increase cost of lgnexus4 by 360
+        	increase cost of lgnexus4 by 360
+		increase cost of lgnexus5 by 495
 	end
 	cost:600 money
 	req:android
