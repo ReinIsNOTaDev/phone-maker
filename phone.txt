@@ -2,10 +2,10 @@ Let's make a game!
 //Welcome to the Phone Maker 2 Code! I don't even know if this is possible.
 	name:Phone Maker 2
 	by:TGRein
-	desc:This is Phone Maker 2, My (probably) BIGGEST project. ever. A game where you make tons of different phones, and make money too.<//>Short link: <u>https://miro.gg/phonemaker2</u><//>Current version: <b>Version 0.3 - 11/19/2022 - Just In Time</b><//><.>Adds 2 more phones per Smartphone Brand<.>Added LG (6 Phones)<.>Changed Requirements for The End.<.>The Great <q>"quotation"</q><.>Added Changelog for Pre Versions<//><//>────────────────────<//>Changelog:<//>────────────────────<//>Public Beta:<//><//><b>Version 0.1 - 10/21/2022 -  Public Beta Release</b><//><.>LOTS of phones, factories, and achievements<.>And of course, copied lots of things that is <b><i>NOT</I></b> the game from The Lost Labyrinths, <u>miro.gg/TLL</U><//><b>Version 0.1.1 - 11/1/2022 - Bugfix 1</b><//><.>Updated the Update Date<.>Increased the Building Cost Increase from 110% to 125%<.>Fix bug when Factories would be lost, and the player is softlocked in the choice2 area.<.>Added a Current Version, showing the version of the game, and the update's changelog.<//><b>Version 0.2 - 11/13/2022 - Multi-brand update and ONE MORE PHONE!</b><//><.>Added OnePlus under Oppo<.>ONE MORE PHONE! except htc.... sowy!<.>Todo: Make LG and Xiaumi<.>Added lots of //notes (notes) in the game<.>Removed "(future)" from Nokia 1610<//><b>Version 0.3 - 11/19/2022 - Just In Time</b><//><.>Adds 2 more phones per Smartphone Brand<.>Added LG (6 Phones)<.>Changed Requirements for The End.<.>The Great <q>"quotation"</q><.>Added Changelog for Pre Versions<.>Version now means how MANY versions have passed (including -Pre Versions)<//>────────────────────<//>Pre-Release Versions<//>────────────────────<//>Public Beta Live:<//><//>Version 0.3-Pre1 - 11/15/2022 - One Phone at a time<//><.>Added iPhone 4S Production<.>Added possibility for iPhone 5 Production<//>Version 0.3-Pre2 - 11/16/2022 - I may have finished it already....<.>Added All Needed Phones<.>The Great <q>"quotation"</q><//>Version 0.3-Pre4 - 11/17/2022 - I forgot Something...<//><.>Added LG (6 Phones)<.>Actually Updated the update date<.>Added Pre-Release Version Changelog<.>Changed Samsung Phone Lineup from Samsung S6 Series to Samsung Alpha<.>Version now means how MANY versions have passed (including -Pre Versions)<//>Version 0.4-Pre1 - 11/20/2022 - Life is <s>Good</s> in progress<//><.>4 more LG Phones
+	desc:This is Phone Maker 2, My (probably) BIGGEST project. ever. A game where you make tons of different phones, and make money too.<//>Short link: <u>https://miro.gg/phonemaker2</u><//>Current version: <b>Version 0.3 - 11/19/2022 - Just In Time</b><//><.>Adds 2 more phones per Smartphone Brand<.>Added LG (6 Phones)<.>Changed Requirements for The End.<.>The Great <q>"quotation"</q><.>Added Changelog for Pre Versions<//><//>────────────────────<//>Changelog:<//>────────────────────<//>Public Beta:<//><//><b>Version 0.1 - 10/21/2022 -  Public Beta Release</b><//><.>LOTS of phones, factories, and achievements<.>And of course, copied lots of things that is <b><i>NOT</I></b> the game from The Lost Labyrinths, <u>miro.gg/TLL</U><//><b>Version 0.1.1 - 11/1/2022 - Bugfix 1</b><//><.>Updated the Update Date<.>Increased the Building Cost Increase from 110% to 125%<.>Fix bug when Factories would be lost, and the player is softlocked in the choice2 area.<.>Added a Current Version, showing the version of the game, and the update's changelog.<//><b>Version 0.2 - 11/13/2022 - Multi-brand update and ONE MORE PHONE!</b><//><.>Added OnePlus under Oppo<.>ONE MORE PHONE! except htc.... sowy!<.>Todo: Make LG and Xiaumi<.>Added lots of //notes (notes) in the game<.>Removed "(future)" from Nokia 1610<//><b>Version 0.3 - 11/19/2022 - Just In Time</b><//><.>Adds 2 more phones per Smartphone Brand<.>Added LG (6 Phones)<.>Changed Requirements for The End.<.>The Great <q>"quotation"</q><.>Added Changelog for Pre Versions<.>Version now means how MANY versions have passed (including -Pre Versions)<//><b>Version 0.3.1 - 11/21/2022 - LG Nexus 5 Bugfix</b><//><.>Fixed LG Unlock to Increase LG Nexus 5 cost<//>────────────────────<//>Pre-Release Versions<//>────────────────────<//>Public Beta Live:<//><//>Version 0.3-Pre1 - 11/15/2022 - One Phone at a time<//><.>Added iPhone 4S Production<.>Added possibility for iPhone 5 Production<//>Version 0.3-Pre2 - 11/16/2022 - I may have finished it already....<.>Added All Needed Phones<.>The Great <q>"quotation"</q><//>Version 0.3-Pre4 - 11/17/2022 - I forgot Something...<//><.>Added LG (6 Phones)<.>Actually Updated the update date<.>Added Pre-Release Version Changelog<.>Changed Samsung Phone Lineup from Samsung S6 Series to Samsung Alpha<.>Version now means how MANY versions have passed (including -Pre Versions)<//>Version 0.4-Pre1 - 11/20/2022 - Life is <s>Good</s> in progress<//><.>4 more LG Phones<//>Version 0.4-Pre2 - 11/21/2022 - Some Phones<//><.>Added 2 Google Nexus Phones (in 1 upgrade)<.>Added 4 LG Phones
 	created:01/11/2022
-	updated:20/11/2022
-	version:9
+	updated:21/11/2022
+	version:11
 Settings
 	background:https://pixelartmaker-data-78746291193.nyc3.digitaloceanspaces.com/image/6221603c7dd736d.png
 	building cost increase:125%
@@ -292,6 +292,7 @@ Upgrades
 		increase cost of lgnexus4 by 341.25
 		increase cost of lgnexus5 by 390
 		increase cost of motonexus6 by 438.75
+		increase cost of lgnexus5xandhuawei6p by 536.25
 	end
     cost:650 money
     req:android
@@ -346,6 +347,8 @@ Upgrades
 	on earn:
 		yield 1 lg
         increase cost of lgnexus4 by 360
+		increase cost of lgnexus5 by 495
+		increase cost of lgnexus5xandhuawei6p by 630
 	end
 	cost:600 money
 	req:android
@@ -543,13 +546,23 @@ Upgrades
     req:(lgnexus4 and googleunlock) or lgg2
 *motonexus6
     name:Motorola Nexus 6 Production
-    desc:The launch device for Android 5.0 Lolipop. [?notsymbian|<q>I've seen this before!</q>|<q>I don't feel good about this...</q>]
+    desc:The launch device for Android 5.0 Lolipop. [?notsymbian|<q>"I've seen this before!"</q>|<q>"I don't feel good about this..."</q>]
     tag:oct2014
     passive:
         increase yield of google by 29.25
     end
     cost:0 money
     req:lgnexus5
+*lgnexus5xandhuawei6p
+	name:LG Nexus 5X and Huawei 6P Production
+	desc:The first Google phone SERIES. <q>"Also the longest name in this game, with 36 characters."</q>
+	tag:sep2015
+	passive:
+		increase yield of google by 35.75
+		increase yield of lg by 42
+	end
+	cost:0 money
+	req:motonexus6
 //bbk phone line (oppo find, oppo a, oneplus number, realme number, realme c, and realme gt)
 *oppofind5
 	name:Oppo Find 5 Production
@@ -648,7 +661,7 @@ Upgrades
 	tag:may2014
 	passive:increase yield of lg by 36
 	cost:540 money
-	req:lgg2
+	req:lgnexus5 and lgunlock
 *lgg4
 	name:LG G4 Production
 	desc:Uhhh I mean the quote says it... <q>"LG G3 is evolving! ..... It turned to <b>LG G4!</b></q>
@@ -659,17 +672,45 @@ Upgrades
 *lgv10
 	name:LG V10 Production
 	desc:It has a customizable second display above the primary display. <q>"You see this? This, is our future!"</q>
-	tag:sep2015
-	passive:increase yield of lg by 42
-	cost:630 money
-	req:lgg4
+	tag:oct2015
+	passive:increase yield of lg by 45
+	cost:675 money
+	req:lgnexus5xandhuawei6p and lgunlock
 *lgg5
 	name:LG G5 Production
 	desc:It focuses in <b>modularity</b>. <q>"Good Idea Counter: -1"</q>
 	tag:apr2016
-	passive:increase yield of lg by 45
-	cost:675 money
+	passive:increase yield of lg by 48
+	cost:720 money
 	req:lgv10
+*lgv20
+	name:LG V20 Production
+	desc:Has a quad DAC for audio. <q>"It has a user-replacable battery which is an advantage for some reason..."</q>
+	tag:sep2016
+	passive:increase yield of lg by 51
+	cost:765 money
+	req:lgg5
+*lgg6
+	name:LG G6 Production
+	desc:Has a 5.7-inch display, which features a taller, 2:1 aspect ratio (marketed as 18:9), than the 16:9 aspect ratio of most smartphones. <q>"I need to simple.wikipedia.org this."</q>
+	tag:feb2017
+	passive:increase yield of lg by 54
+	cost:810 money
+	req:lgv20
+*lgg6plus
+	name:LG G6+ Production
+	desc:A variant of the LG G6, with 128 GB storage and a Hi-Fi Quad DAC. <q>"Hi-Fi? Like.. High quality Wifi?"</q>
+	tag:june2017
+	passive:increase yield of lg by 57
+	cost:855 money
+	req:lgg6
+*lgq6
+	name:LG Q6 Production
+	desc:(insert info about this thing that may exist). <q>"Wikipedia, Wikipedia."</q>
+	tag:aug2017
+	passive:increase yield of lg by 60
+	cost:900 money
+	req:lgg6plus
 Achievements
 //Achievements, my brain is on fire.
 //Progress Achievements
