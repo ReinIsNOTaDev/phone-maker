@@ -569,7 +569,7 @@ Upgrades
 		increase yield of lg by 42
 	end
 	cost:0 money
-	req:(motonexus6 ang googleunlock) or lgg4
+	req:(motonexus6 and googleunlock) or lgg4
 *googlepixelseries
 	name:Google Pixel/Pixel XL Production
 	desc:The Pixel and Pixel XL are a pair of Android smartphones designed, developed, and marketed by Google as part of the Google Pixel product line, succeeding the Nexus line of smartphones. <q>"long."</q>
