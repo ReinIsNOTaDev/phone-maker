@@ -2,10 +2,10 @@ Let's make a game!
 //Welcome to the Phone Maker 2 Code! I don't even know if this is possible.
 	name:Phone Maker 2
 	by:TGRein
-	desc:This is Phone Maker 2, My (probably) BIGGEST project. ever. A game where you make tons of different phones, and make money too.<//>Short link: <u>https://miro.gg/phonemaker2</u><//>Current version: <b>Version 0.3 - 11/19/2022 - Just In Time</b><//><.>Adds 2 more phones per Smartphone Brand<.>Added LG (6 Phones)<.>Changed Requirements for The End.<.>The Great <q>"quotation"</q><.>Added Changelog for Pre Versions<//><//>────────────────────<//>Changelog:<//>────────────────────<//>Public Beta:<//><//><b>Version 0.1 - 10/21/2022 -  Public Beta Release</b><//><.>LOTS of phones, factories, and achievements<.>And of course, copied lots of things that is <b><i>NOT</I></b> the game from The Lost Labyrinths, <u>miro.gg/TLL</U><//><b>Version 0.1.1 - 11/1/2022 - Bugfix 1</b><//><.>Updated the Update Date<.>Increased the Building Cost Increase from 110% to 125%<.>Fix bug when Factories would be lost, and the player is softlocked in the choice2 area.<.>Added a Current Version, showing the version of the game, and the update's changelog.<//><b>Version 0.2 - 11/13/2022 - Multi-brand update and ONE MORE PHONE!</b><//><.>Added OnePlus under Oppo<.>ONE MORE PHONE! except htc.... sowy!<.>Todo: Make LG and Xiaumi<.>Added lots of //notes (notes) in the game<.>Removed "(future)" from Nokia 1610<//><b>Version 0.3 - 11/19/2022 - Just In Time</b><//><.>Adds 2 more phones per Smartphone Brand<.>Added LG (6 Phones)<.>Changed Requirements for The End.<.>The Great <q>"quotation"</q><.>Added Changelog for Pre Versions<.>Version now means how MANY versions have passed (including -Pre Versions)<//><b>Version 0.3.1 - 11/21/2022 - LG Nexus 5 Bugfix</b><//><.>Fixed LG Unlock to Increase LG Nexus 5 cost<//>────────────────────<//>Pre-Release Versions<//>────────────────────<//>Public Beta Live:<//><//>Version 0.3-Pre1 - 11/15/2022 - One Phone at a time<//><.>Added iPhone 4S Production<.>Added possibility for iPhone 5 Production<//>Version 0.3-Pre2 - 11/16/2022 - I may have finished it already....<.>Added All Needed Phones<.>The Great <q>"quotation"</q><//>Version 0.3-Pre4 - 11/17/2022 - I forgot Something...<//><.>Added LG (6 Phones)<.>Actually Updated the update date<.>Added Pre-Release Version Changelog<.>Changed Samsung Phone Lineup from Samsung S6 Series to Samsung Alpha<.>Version now means how MANY versions have passed (including -Pre Versions)<//>Version 0.4-Pre1 - 11/20/2022 - Life is <s>Good</s> in progress<//><.>4 more LG Phones<//>Version 0.4-Pre2 - 11/21/2022 - Some Phones<//><.>Added 2 Google Nexus Phones (in 1 upgrade)<.>Added 4 LG Phones
+	desc:This is Phone Maker 2, My (probably) BIGGEST project. ever. A game where you make tons of different phones, and make money too.<//>Short link: <u>https://miro.gg/phonemaker2</u><//>Current version: <b>Version 0.3 - 11/19/2022 - Just In Time</b><//><.>Adds 2 more phones per Smartphone Brand<.>Added LG (6 Phones)<.>Changed Requirements for The End.<.>The Great <q>"quotation"</q><.>Added Changelog for Pre Versions<//><//>────────────────────<//>Changelog:<//>────────────────────<//>Public Beta:<//><//><b>Version 0.1 - 10/21/2022 -  Public Beta Release</b><//><.>LOTS of phones, factories, and achievements<.>And of course, copied lots of things that is <b><i>NOT</I></b> the game from The Lost Labyrinths, <u>miro.gg/TLL</U><//><b>Version 0.1.1 - 11/1/2022 - Bugfix 1</b><//><.>Updated the Update Date<.>Increased the Building Cost Increase from 110% to 125%<.>Fix bug when Factories would be lost, and the player is softlocked in the choice2 area.<.>Added a Current Version, showing the version of the game, and the update's changelog.<//><b>Version 0.2 - 11/13/2022 - Multi-brand update and ONE MORE PHONE!</b><//><.>Added OnePlus under Oppo<.>ONE MORE PHONE! except htc.... sowy!<.>Todo: Make LG and Xiaumi<.>Added lots of //notes (notes) in the game<.>Removed "(future)" from Nokia 1610<//><b>Version 0.3 - 11/19/2022 - Just In Time</b><//><.>Adds 2 more phones per Smartphone Brand<.>Added LG (6 Phones)<.>Changed Requirements for The End.<.>The Great <q>"quotation"</q><.>Added Changelog for Pre Versions<.>Version now means how MANY versions have passed (including -Pre Versions)<//><b>Version 0.3.1 - 11/21/2022 - LG Nexus 5 Bugfix</b><//><.>Fixed LG Unlock to Increase LG Nexus 5 cost<//>────────────────────<//>Pre-Release Versions<//>────────────────────<//>Public Beta Live:<//><//>Version 0.3-Pre1 - 11/15/2022 - One Phone at a time<//><.>Added iPhone 4S Production<.>Added possibility for iPhone 5 Production<//>Version 0.3-Pre2 - 11/16/2022 - I may have finished it already....<.>Added All Needed Phones<.>The Great <q>"quotation"</q><//>Version 0.3-Pre4 - 11/17/2022 - I forgot Something...<//><.>Added LG (6 Phones)<.>Actually Updated the update date<.>Added Pre-Release Version Changelog<.>Changed Samsung Phone Lineup from Samsung S6 Series to Samsung Alpha<.>Version now means how MANY versions have passed (including -Pre Versions)<//>Version 0.4-Pre1 - 11/20/2022 - Life is <strike>Good</strike> in progress<//><.>4 more LG Phones<//>Version 0.4-Pre2 - 11/21/2022 - Some Phones<//><.>Added 2 Google Nexus Phones (in 1 upgrade)<.>Added 4 LG Phones<//>Version 0.4-Pre3 - 11/24/2022 - Life is Complete (for now)<//><.>Added 8 LG Phones (in 7 upgrades)<.>Added 6 Google Pixels (in 3 upgrades)<.>Added 2 Galaxy A Phones (in 1 upgrade), setting a new longest name record!
 	created:01/11/2022
-	updated:21/11/2022
-	version:11
+	updated:24/11/2022
+	version:12
 Settings
 	background:https://pixelartmaker-data-78746291193.nyc3.digitaloceanspaces.com/image/6221603c7dd736d.png
 	building cost increase:125%
@@ -493,6 +493,13 @@ Upgrades
     passive:increase yield of samsung by 34.25
     cost:498.75 money
     req:galaxys5
+*2014galaxya3anda5
+	name:(2014/2015) Samsung Galxaxy A3/5 Production
+	desc:A3:<//>It was introduced in October 2014, along with the larger and related Samsung Galaxy A5.<//>A5:<//>Serving as a premium upper mid-range device, it was introduced on 30 October 2014, along with the smaller and related Samsung Galaxy A3 (2015) and larger Samsung Galaxy A7 (2015) introduced later in January 2015. <q>"(Now) The longest name in the Game with 43 characters."</q>
+	tag:oct2015
+	passive:increase yield of samsung by 37
+	cost:555 money
+	req:galaxyalpha
 //google phone line (nexus and pixel line)
 *htcnexusone
 	name:HTC Nexus One Production
@@ -513,7 +520,7 @@ Upgrades
 		increase yield of google by 16.25
 	end
 	cost:0 money
-	req:galaxys or htcnexusone
+	req:galaxys or (htcnexusone and googleunlock)
 *galaxynexus
 	name:Samsung Galaxy Nexus Production
 	desc:Once again, (I think) the first dual-core nexus. <q>"Got the Galaxy S2 Treatment, eh?"</q>
@@ -533,7 +540,7 @@ Upgrades
         increase yield of lg by 24
     end
     cost:0 money
-    req:galaxynexus or lgoptimus4xhd
+    req:(galaxynexus and googleunlock) or lgoptimus4xhd
 *lgnexus5
     name:LG Nexus 5 Production
     desc:The launch device for Android 4.4 KitKat <q>"uhhhhh, there's not that much here sir..."</q>
@@ -555,14 +562,33 @@ Upgrades
     req:lgnexus5
 *lgnexus5xandhuawei6p
 	name:LG Nexus 5X and Huawei 6P Production
-	desc:The first Google phone SERIES. <q>"Also the longest name in this game, with 36 characters."</q>
+	desc:The first Google phone SERIES. <q>"(As of 0.4-Pre2) Also the longest name in this game, with 36 characters."</q>
 	tag:sep2015
 	passive:
 		increase yield of google by 35.75
 		increase yield of lg by 42
 	end
 	cost:0 money
-	req:motonexus6
+	req:(motonexus6 ang googleunlock) or lgg4
+*googlepixelseries
+	name:Google Pixel/Pixel XL Production
+	desc:The Pixel and Pixel XL are a pair of Android smartphones designed, developed, and marketed by Google as part of the Google Pixel product line, succeeding the Nexus line of smartphones. <q>"long."</q>
+	tag:oct2016
+	passive:increase yield of google by 39
+	cost:585 money
+	req:(lgnexus5xandhuawei6p and googleunlock)
+*googlepixel2series
+	name:Google Pixel 2/2 XL Production
+	desc:The Pixel 2 and Pixel 2 XL are both powered by the Qualcomm Snapdragon 835, coupled with 4 GB LPDDR4X RAM. They both come in storage options of 64 or 128 GB. <q>"Ask more of your phone."</q>
+	tag:oct2017
+	passive:increase yield of google by 42.25
+	cost:633.75 money
+*googlepixele3series
+	name:Google Pixel 3/3 XL Production
+	desc:Both phones feature glass backs and wireless charging, which are firsts for the Pixel range. <q>"Point of diminishing returns."</q>
+	tag:oct2018
+	passive:increase yield of google by 45.5
+	cost:682.5 money
 //bbk phone line (oppo find, oppo a, oneplus number, realme number, realme c, and realme gt)
 *oppofind5
 	name:Oppo Find 5 Production
@@ -711,6 +737,62 @@ Upgrades
 	passive:increase yield of lg by 60
 	cost:900 money
 	req:lgg6plus
+*2017lgq8
+	name:(2017) LG Q8 Production
+	desc:<q>"dont look here, nothing is happening"</q>
+	tag:aug2017
+	passive:increase yield of lg by 63
+	cost:945 money
+	req:lgq6
+*lgv30series
+	name:LG V30/V30+ Production
+	desc:This forgoes the V20's secondary display for a "floating bar" that is EXACTLY the same from the secondary display, and non-removable battery. <q>"Yep... WHY?"</q>
+	tag:sep2017
+	passive:increase yield of lg by 69
+	cost:1035 money
+	req:2017lgq8
+*lgv30sthinq
+	name:LG V30S ThinQ Production
+	desc:Marks the first phone with the ThinQ branding. <q>"ThinQ, <b>NOT</q> Thin.</q>
+	tag:feb2018
+	passive:increase yield of lg by 72
+	cost:1080 money
+	req:lgv30series
+*lgg7thinq
+	name:LG G7 ThinQ Production
+	desc:The display is HDR10-capable, supporting high dynamic range playback of YouTube and Netflix content. <q>"apple notch"</q>
+	tag:may2018
+	passive:increase yield of lg by 75
+	cost:1125 money
+	req:lgv30sthinq
+*lgv35thinq
+	name:LG V35 ThinQ Production
+	desc:The phone contains most of the build and design of the LG V30 with the addition of upgraded hardware. <q>"Mid-year Refresh?"</q>
+	tag:may2018
+	passive:increase yield of lg by 78
+	cost:1170 money
+	req:lgg7thinq
+*lgq7
+	name:LG Q7 Production
+	desc:<q>"Not ThinQ = Not Good"</q>
+	tag:june2018
+	passive:increase yield of lg by 81
+	cost:1215 money
+	req:lgv35thinq
+*2018lgq8
+	name:(2018) LG Q8 Production
+	desc:<q>"LG Q8, but twenty-eighteen!"</q>
+	tag:aug2018
+	passive:increase yield of lg by 84
+	cost:1260 money
+	req:lgq7
+*lgv40thinq
+	name:LG V40 ThinQ Production
+	desc:The V40 was LG's first smartphone to feature 5 cameras: 2 on the front and 3 on the back. <q>"there's not that much wrong here."</q>
+	tag:oct2018
+	passive:increase yield of lg by 87
+	cost:1305 money
+	req:2018lgq8
 Achievements
 //Achievements, my brain is on fire.
 //Progress Achievements
