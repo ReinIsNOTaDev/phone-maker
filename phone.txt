@@ -484,22 +484,38 @@ Upgrades
     desc:It adds IP67 water resistance, a fingerprint scanner, the ability to record 4K videos. <q>"insert your fingers, please"</q>
     tag:feb2014
     passive:increase yield of samsung by 27.75
-    cost:416.25
+    cost:416.25 money
     req:galaxys4
 *galaxyalpha
     name:Samsung Galaxy Alpha Production
     desc:The first in the long A Series of Samsung Galaxy A Series. <q>"Say A...."</q>
     tag:sep2014
     passive:increase yield of samsung by 34.25
-    cost:498.75 money
+    cost:513.75 money
     req:galaxys5
+*galaxys6series 82.5 
+	name:Samsung Galaxy S6/6 Edge Production
+	desc:It adds the ability to quickly charge the phone with up to 15 watts using Qualcomm Quick Charge 2.0, virtual reality (compatible with the Galaxy Gear VR), and features a new metal and glass build. <q>"It also removes several features, but you should wikipedia it, It has been very useful."</q>
+	tag:mar2015
+	passive:increase yield of samsung by 37
+	cost:555 money
+	req:galaxyalpha
 *2014galaxya3anda5
 	name:(2014/2015) Samsung Galxaxy A3/5 Production
 	desc:A3:<//>It was introduced in October 2014, along with the larger and related Samsung Galaxy A5.<//>A5:<//>Serving as a premium upper mid-range device, it was introduced on 30 October 2014, along with the smaller and related Samsung Galaxy A3 (2015) and larger Samsung Galaxy A7 (2015) introduced later in January 2015. <q>"(Now) The longest name in the Game with 43 characters."</q>
 	tag:oct2015
-	passive:increase yield of samsung by 37
-	cost:555 money
-	req:galaxyalpha
+	passive:increase yield of samsung by 39.75
+	cost:596.25 money
+	req:galaxys6series
+*galaxys7series
+	name:Galaxy S7/7 Edge Production
+	desc:<q>"in porgress as of 11/26/2022"</q>
+	tag:feb2015
+	passive:increase yield of samsung by 43.5
+	cost:637.5 money
+	req:2014galaxya3anda5
+*2015galaxya7
+	name:(2015) Samsung Galaxy A7 Production
 //google phone line (nexus and pixel line)
 *htcnexusone
 	name:HTC Nexus One Production
