@@ -407,6 +407,12 @@ Upgrades
     passive:increase yield of apple by  67.5
     cost:1012.5 money
     req:iphone4s
+*iphone5cand5s
+    name:iPhone 5s/5c Production
+    desc:5s:<//>Apple held an event to introduce the iPhone 5S, along with the iPhone 5C, on September 10, 2013. It has the same design as the iPhone 5, but has new features such as the Touch ID fingerprint scanner and an improved camera.<//>5c:<//>The iPhone 5C has almost the same hardware as the iPhone 5. A few differences are that it has a slightly bigger battery and it also comes in five different colors (blue, green, pink, yellow, and white). It also uses a plastic shell on the outside instead of a metal casing that is used on the iPhone 5 and 5S. <q>"iPhone 5CS guys?"</q>
+    tag:sep2013
+*iphone6and6plus
+    name:
 //htc phone line (random phones, droid, and desire only)
 *htcdream
 	name:HTC Dream Production
@@ -450,6 +456,20 @@ Upgrades
     passive:increase yield of htc by 25
     cost:375 money
     req:htcnexusone
+*htclegend
+   name:HTC Legend Production
+   desc:The Legend is the successor to the HTC Hero and is slimmer and smaller than its predecessor with minor hardware enhancements. <q>"Legend says this doesn't have a succesor."</q>
+    tag:apr2010
+    passive:increase yield of htc by 27.5
+    cost:450 money
+    req:htcdesire
+*htcdroidincredible
+    name:HTC Droid Incredible Production
+    desc:It has improvements over standard 2.1 devices including an FM tuner; a Facebook-, Twitter-, and Flickr-integrated social-aggregation application called Friend Stream (as well as a Twitter client named Peep); a geotagging application for photos called Footprints; and a redesigned appearance and functionality for stock 2.1 applications. <q>"incredible?"</q>
+    tag:apr2010
+    passive:increase yield of htc by 30
+    cost:525 money
+    req:htclegend
 //samsung phone line (s and alpha/a series)
 *galaxys
 	name:Samsung Galaxy S Production
@@ -490,32 +510,142 @@ Upgrades
     name:Samsung Galaxy Alpha Production
     desc:The first in the long A Series of Samsung Galaxy A Series. <q>"Say A...."</q>
     tag:sep2014
-    passive:increase yield of samsung by 34.25
-    cost:513.75 money
+    passive:increase yield of samsung by 30.5
+    cost:457.5 money
     req:galaxys5
-*galaxys6series 82.5 
+*galaxys6series
 	name:Samsung Galaxy S6/6 Edge Production
 	desc:It adds the ability to quickly charge the phone with up to 15 watts using Qualcomm Quick Charge 2.0, virtual reality (compatible with the Galaxy Gear VR), and features a new metal and glass build. <q>"It also removes several features, but you should wikipedia it, It has been very useful."</q>
 	tag:mar2015
-	passive:increase yield of samsung by 37
-	cost:555 money
+	passive:increase yield of samsung by 36
+	cost:540 money
 	req:galaxyalpha
 *2014galaxya3anda5
-	name:(2014/2015) Samsung Galxaxy A3/5 Production
-	desc:A3:<//>It was introduced in October 2014, along with the larger and related Samsung Galaxy A5.<//>A5:<//>Serving as a premium upper mid-range device, it was introduced on 30 October 2014, along with the smaller and related Samsung Galaxy A3 (2015) and larger Samsung Galaxy A7 (2015) introduced later in January 2015. <q>"(Now) The longest name in the Game with 43 characters."</q>
-	tag:oct2015
-	passive:increase yield of samsung by 39.75
-	cost:596.25 money
+	name:(2014/2015) Galxaxy A3/5 Production
+	desc:A3:<//>It was introduced in October 2014, along with the larger and related Samsung Galaxy A5.<//>A5:<//>Serving as a premium upper mid-range device, it was introduced on 30 October 2014, along with the smaller and related Samsung Galaxy A3 (2015) and larger Samsung Galaxy A7 (2015) introduced later in January 2015. <q>"(Oopsie) The longest name in the Game with 35 characters."</q>
+	tag:oct2014
+	passive:increase yield of samsung by 41.5
+	cost:622.5 money
 	req:galaxys6series
+*2015galaxya7
+	name:(2015) Galaxy A7 Production
+    desc:The Samsung Galaxy A7 serves as one of the successors to the Samsung Galaxy Alpha. It was released alongside the Samsung Galaxy A3 and A5. <q>"Seriusly, Samsung is a research pain."</q>
+    tag:jan2015
+    passive:increase yield of samsung by 44.25
+	cost:663.75 money
+	req:2014galaxya3anda5
+*2015galaxya8
+    name:(2015) Galaxy A8 Production
+    desc:The Galaxy A8 is thinner than earlier models from the A-series lineup, measuring 5.9 millimetres (0.23 in) in thickness. The display is protected by Gorilla Glass 4. <q>"the first time to get the latest Flash player is required for video playback is unavailable right now because this video is not an intended recipient."</q>
+    tag:july2015
+    passive:increase yield of samsung by 47
+    cost:705 money
+    req:2015galaxya7
+*2016galaxya3a5anda7
+    name:(2016) Galaxy A3/5/7 Production
+    desc:A3:<//>This phone is powered by the Exynos 7580 (Exynos 7 Octa) SoC with 1.6GHz octa-core 64-bit processor and Mali T720-MP2 graphics processor. The smartphone has 2 GB RAM and 16 GB eMMC internal storage with support for removable MicroSD cards of up to 128 GB. The device's MicroSD card allows insertion of a SIM card, thus it can also be used in Dual SIM mode.<//>A5:<//>This phone is powered by the Exynos 7580 (Exynos 7 Octa) SoC with 1.6GHz octa-core 64-bit processor and Mali T720-MP2 graphics processor. The smartphone has 2 GB RAM and 16 GB eMMC internal storage with support for removable MicroSD cards of up to 128 GB. The device's MicroSD card allows insertion of a SIM card, thus it can also be used in Dual SIM mode.<//>A7:<//>The Phone runs Android 5.1.1 Lollipop right out-of-the-box and is upgradeable to Android 6.0.1 Marshmallow and Android 7.0 Nougat.[3] The smartphone features Exynos 7580 SoC consisting of octa-core 1.6 Ghz ARM Cortex-A53 processor and Mali T720-MP2 GPU and sports 3 GB RAM and 16 GB internal storage which expandable up to 128 GB via a MicroSD slot which can also be used for a second Nano-SIM. In China, it was released with Snapdragon 615. The device retains a non-removable battery like its predecessor, rated at 3300 mAh.<q>"When I realized pain."</q>
+    tag:dec2015
+    passive:increase yield of samsung by 55.25
+	cost:828.75 money
+    req:2015galaxya8
+*2016galaxya9
+    name:(2016) Galaxy A9 Production
+    desc:Samsung Galaxy A9 or Samsung Galaxy A9 2016 Edition is an Android phablet produced by Samsung Electronics. It was introduced on January 15, 2016, along with the Samsung Galaxy A3 (2016), Samsung Galaxy A5 (2016), and Samsung Galaxy A7 (2016). <q>Wait, this is so wierd! ~Rein "</q>
+    tag:jan2016
+    passive:increase yield of samsung by 58
+    cost:870 money
+    req:2016galaxya3a5anda7
 *galaxys7series
 	name:Galaxy S7/7 Edge Production
-	desc:<q>"in porgress as of 11/26/2022"</q>
-	tag:feb2015
-	passive:increase yield of samsung by 43.5
-	cost:637.5 money
-	req:2014galaxya3anda5
-*2015galaxya7
-	name:(2015) Samsung Galaxy A7 Production
+	desc:They improve upon the Galaxy S6 by adding an always-on display to optionally show information while the screen is off, a "Dual Pixel" camera feature for faster autofocus, and improved low-light photography. <q>"in porgress as of 11/26/2022"</q>
+	tag:feb2016
+	passive:increase yield of samsung by 60.75
+    cost:911.25 money
+    req:2016galaxya9
+*2016galaxya9pro
+    name:(2016) Galaxy A9 Pro Production
+    desc:The Samsung Galaxy A9 Pro (2016) runs Android 6.0 "Marshmallow". The difference between the Samsung Galaxy A9 (2016) and the Pro version is that the A9 (2016) has 3GB of RAM and a 4000mAh battery while A9 Pro (2016) has 4 GB of RAM and a 5000mAh battery. Also, A9 Pro is equipped with a 16 MP rear camera while the A9 (2016) has a 13 MP rear camera. <q>"Budget Pro?"</q>
+    tag:mar2016
+    passive:increase yield of samsung by 63.5
+    cost:952.5 money
+    req:galaxys7series
+*2016galaxya8
+    name:(2016) Galaxy A8 Production
+    desc:The Samsung Galaxy A8 (2016) is an Android phablet produced by Samsung Electronics. It was introduced on September 30, 2016 by South Korean telecom provider SK Telecom. Unlike most Galaxy A series smartphones, the Galaxy A8 (2016) has a better processor similar to Samsung's 2015 flagships, the Samsung Galaxy S6, Samsung Galaxy S6 Edge and Samsung Galaxy Note 5. <q>"Ah, note. Your fate....."</q>
+    tag:sep2016
+    passive:increase yield of samsung by 66.25
+    cost:993.75
+    req:2016galaxya9pro
+*2017galaxya3a5anda7
+    name:(2017) Galaxy A3/5/7 Production
+    desc:A3:<//>This handset is currently the last in the A3 series, and also the last Samsung handset to feature a screen smaller than 5".<//>A5:<//>A new "Always On display" functionality displays a clock, calendar and notifications on screen when the device is in standby.<//>A7:<//>The Samsung Galaxy A7 (2017) is an Android high to midrange smartphone produced by Samsung Electronics. It was announced on January 2, 2017, along with Samsung Galaxy A3 (2017) and Samsung Galaxy A5 (2017). This move marks Samsung's first product launch since the discontinuation of the Galaxy Note 7 back in October 2016. <q>"All Interesting, but why, WHY, did <b>3 whole phones</b> got kicked by the can?"</q>
+    tag:jan2017
+    passive:increase yield of samsung by 74.5
+    cost:1117.5 money
+    req:2016galaxya8
+*galaxys8series
+    name:Galaxy S8/8+ Production
+    desc:They feature an iris scanner, which was not present on the Galaxy S7 phones. S Voice has also been replaced by Bixby. In addition, the microUSB port has been replaced by a USB-C 3.0 port, and the physical home button and capacitive buttons have been replaced by on-screen keys. All previous galaxy S series smartphones featured a 16:9 aspect ratio which was changed on the Galaxy S8 for the first time. A new feature called Samsung DeX was added, allowing the phone to get a desktop user interface when plugged in a monitor. <q>"<u>simple.wikipedia.org</u> me."</q>
+    tag:mar2017
+    passive:increase yield of samsung by 80
+    cost:1200 money
+    req:2017galaxya3a5anda7
+*2018galaxya8anda8plus
+    name:(2018) Galaxy A8/8+ Production
+    desc:The Samsung Galaxy A8 and Samsung Galaxy A8+ (2018) are upper-midrange Android smartphones produced by Samsung Electronics. They were announced on 19 December 2017. The devices run Android 7.1.1 "Nougat" out-of-the-box with Samsung Experience 8.5.
+    tag:dec2018
+    passive:increase yield of samsung by 85.5
+    cost:1282.5 money
+    req:galaxys8series
+*galaxys9series
+    name:Galaxy S9/9+ Production
+    desc:The Samsung Galaxy S9 and Samsung Galaxy S9+ were unveiled on 25 February 2018 at the Mobile World Congress, with an improved camera, redesigned back panel and improved internals. The fingerprint scanner on the back is relocated to below the rear-facing camera, and the earpiece becomes an additional speaker for stereo sound. <q>"Lucky or Unlucky, It works I guess."</q>
+    tag:feb2018
+    passive:increase yield of samsung by 91
+    cost:1365 money
+    req:2018galaxya8anda8plus
+*2018galaxya6anda6plus
+    name:(2018) Galaxy A6/6+ Production
+    desc:They were announced on 2 May 2018, first released in Europe, Asia, and Latin America the same month, then released in South Korea, Africa, and China. The Samsung Galaxy A6+ is rebranded in South Korea as Galaxy Jean & in China as Galaxy A9 Star lite. <q>"6 + Plus = 6+ = Jean = 9 Star lite"</q>
+    tag:may2018
+    passive:increase yield of samsung by 96.5
+    cost:1447.5 money
+    req:galaxys9series
+*2018galaxya8star
+    name:(2018) Galaxy A8 Star/9 Star Production
+    desc:The Samsung Galaxy A8 Star is a midrange Android smartphone manufactured and marketed by Samsung as part of the Samsung Galaxy A series. It was announced in June 2018 for Southeast Asian markets, namely Korea, China and India. In China, it is sold as the Samsung Galaxy A9 Star. <q>"The Star at being the longest name in the game (Now) with <b>39 characters!</b>"</q>
+    tag:june2018
+    passive:increase yield of samsung by 99.25
+    cost:1488.75 money
+    req:2018galaxya6anda6plus
+*2018galaxya7
+    name:(2018) Galaxy A7 Production
+    desc:It was announced on 20 September 2018 as the successor of Samsung Galaxy A7 (2017). <q>"7 ALL THE WAYYYYYYYY"</q>
+    tag:sep2018
+    passive:increase yield of samsung by 102
+    cost:1530 money
+    req:2018galaxya8star
+*2018galaxya9
+    name:(2018) Galaxy A9 Production
+    desc:It was announced on 11 October 2018 at the A Galaxy event in Kuala Lumpur, Malaysia, as the successor to the Samsung Galaxy A9 (2016). Galaxy A9 (2018) is the world's first smartphone that features 4 different cameras on the rear. It features a 6.3 inch Super AMOLED Infinity Display with curved edges similar to the Samsung Galaxy A8 (2018) and supports Dolby Atmos immersive sound technology. <q>"Budget Pro EVERYTHING!"</q>
+    tag:oct2018
+    passive:increase yield of samsung by 104.75
+    cost:1571.25 money
+    req:2018galaxya7
+*2018galaxya6s
+    name:(2018) Galaxy A6s Production
+    desc:It was introduced on 24 October 2018. It is the first Galaxy smartphone not to be manufactured by Samsung, but by Wingtech. <q>"Wingtech? More like WingFAIL!!!"</q>
+    tag:oct2018
+    passive:increase yield of samsung by 107.5
+    cost:1612.5 money
+    req:2018galaxya9
+*2018galaxya8s
+    name:(2018) Galaxy A8s Production
+    desc:The Samsung Galaxy A8s is a midrange Android smartphone produced by Samsung Electronics as part of the Samsung Galaxy A series. It was announced on 10 December 2018 primarily for the Chinese market. It is also sold as the Samsung Galaxy A9 Pro (2019) in South Korea. <q>"S."</q>
+    tag:dec2018
+    passive:increase yield of samsung by 110.25
+    cost:1653.75 money
+    req:2018galaxya6s
 //google phone line (nexus and pixel line)
 *htcnexusone
 	name:HTC Nexus One Production
@@ -578,7 +708,7 @@ Upgrades
     req:lgnexus5
 *lgnexus5xandhuawei6p
 	name:LG Nexus 5X and Huawei 6P Production
-	desc:The first Google phone SERIES. <q>"(As of 0.4-Pre2) Also the longest name in this game, with 36 characters."</q>
+	desc:The first Google phone SERIES. <q>"(Now) Also the longest name in this game, with 36 characters."</q>
 	tag:sep2015
 	passive:
 		increase yield of google by 35.75
@@ -639,21 +769,105 @@ Upgrades
     passive:increase yield of oppo by 14
     cost:280 money
     req:oneplusone
+*oneplusx
+    name:OnePlus X Production
+    desc:Being the successor to OnePlus 2, OnePlus X was OnePlus' entrance to the budget phone market. <q>"How can it be a <b>succesor</b> when it is a <i>budget</i> phone?"</q>
+    tag:oct2015
+    passive:increade yield of oppo by 20
+    cost:400 money
+    req:oneplus2
 *2015oppoa33
     name:Oppo A33 (2015) Production
     desc:The first A Series phone... I guess? <q>"wikipedia, PLEASE HELP ME!"</q>
     tag:nov2015
-    req:oneplus2
+    passive:increase yield of oppo by 24
+	cost:480 money
+    req:oppofind7series
+*oneplus3
+    name:OnePlus 3 Production
+    desc:This was the first OnePlus device to be not part of the invite system. <q>"what is an invite system?"</q>
+    tag:june2016
+    passive:increase yield of oppo by 26
+    cost:520 money
+    req:2015oppoa33
+*oneplus3t
+    name:OnePlus 3T Production
+    desc:This phone was said as a minor upgrade to the still relatively new OnePlus 3. <q>"The upgrade consisted the use of a newer SoC; the Qualcomm Snapdragon 820 was replaced with the Snapdragon 821. Also introduced were a higher-capacity battery, 64 or 128 GB of storage and 16 MP front-facing camera."</q>
+    tag:nov2016
+    passive:increase yield of oppo by 32
+    cost:640 money
+    req:oneplus3
+*oneplus5
+    name:OnePlus 5 Production
+    desc:This phone series skipped the number 4, because in China, 4 is an unlucky number. <q>"Ok, I guess."</q>
+    tag:june2017
+    passive:increase yield of oppo by 38
+    cost:760 money
+    req:oneplus3t
+*oneplus5t
+    name:OnePlus 5T Production
+    desc:The OnePlus 5T was unveiled on 16 November 2017, as the successor to the OnePlus 5. <q>"It features the same Qualcomm Snapdragon 835 SoC and storage options as its predecessor, and notable features include a larger 6" 18:9 display, a new "Face Unlock" facial recognition method, and an improved dual-lens camera."</q>
+    tag:nov2017
+    passive:increase yield of oppo of 44
+    cost:880 money
+    req:oneplus5
+*oneplus6
+    name:OnePlus 6 Production
+    desc:The phone notably features a display notch and water resistance (although not IP Code rated). The smartphone was the first from the company to offer a 256 GB inbuilt storage variant. It has a 6.28 inches FHD+ Optic AMOLED Display. It comes with a 16 MP primary sensor with OIS and EIS and 20 MP depth sensor for portrait shots at the back and is able to record at 4K resolution 60 FPS video and 16 MP front camera with EIS. It features a 3300 mA⋅h battery and came with a 20 watts OnePlus Dash Charge. It was available in 4 colours, "Mirror" black, "Midnight" black, "Silk" white and red. It was powered by the Qualcomm Snapdragon 845 and Adreno 630. <q>"Sorry for copying <b>THE ENTIRE</b> summary of the phone in wikipedia."</q>
+    tag:may2018
+    passive:increase yield of oppo by 50
+    cost:1000 money
+    req:oneplus5t
+*realmeunlock
+    name:Realme Unlock
+    desc:Spin off <b>another</b> brand and make OPPO Real, or Realme. <q>"Real Me, You, and Everyone!"</q>
+    cost:600 money
+    req:2015oppoa33 or (oneplusunlock and oneplus6)
+*realme1
+    name:Realme 1 Production
+    desc:Realme's first smartphone product, Realme 1, launched in India in May 2018. It has an 18:9 display with 6.0-inch FHD+ resolution and is equipped with a MTK Helio P60 chipset, a 13MP single rear camera with a single tone LED flash, an 8MP front camera without LED Flash, and a non-removable 3410 mAh battery. It was initially available in three storage configurations: 3 GB of RAM and 30 GB of, 3 GB of RAM and 60 GB of storage, and a version with 6 GB of RAM and 128 GB of internal storage and sold more than 400,000 units in the first 30 days exclusively on Amazon India. <q> "There is no way I got this from Wikipedia, and that is correct."</q>
+    tag:may2018
+    passive:increase yield of oppo by 9
+    cost:225 money
+    req:realmeunlock
 *oppofindx
 	name:Oppo Find <b>X</b> Production.
 	desc:(proabbly) The first phone with a pop up camera <q>"<b>BEZEL INNOVATION!</b>"</q>
 	tag:june2018
-	passive:
-		increase yield of oppo by 24
-		if (oneplusone is 1) increase yield of oppo by 2
-	end
-	cost:360 money
+	passive:increase yield of oppo by 28
+	cost:420 money
 	req:2015oppoa33
+*oppoa3s
+    name:Oppo A3s Production
+    desc:Also known as the A12e. <q>"A quote is a statement or group of statements attributed to someone else. Quotes are often used to summarize or provide insight into a particular situation or idea. They can be used in writing or speech to add emphasis or support an argument or idea."</q>
+    tag:july2018
+    passive:increase yield of oppo by 32
+    cost:480 money
+    req:oppofindx
+*realme2
+    name:Realme 2 Production
+    desc:Realme 2 was unveiled in August 2018. It comes with a 6.2-inch HD+ display with an aspect ratio of 19:9. The model's current version of ColorOS is 6.0 and inspired by Android 9 Pie. <q>"Pie 69"</q>
+    tag:aug2018
+    passive:increase yield of oppo by 12
+    cost:300 money
+    req:realme1
+*realme2pro
+    name:Realme 2 Pro Production
+    desc:The Realme 2 Pro smartphone was launched in September 2018. It comes with a 6.30-inch touchscreen display with a resolution of 1080x2340 pixels at a density of 409 pixels per inch. It was the first Realme product to be sold outside of India; it launched in Indonesia on 9 October 2018. <q>"Hey, why is it one month later? Like wh- NOOOOOO---- . He died later."</q>
+    tag:sep2018
+    passive:increase yield of oppo by 15
+    cost:375 money
+    req:realme2
+*realmec1
+    name:Realme C1 Production
+    desc:The realme C1, powered by the Snapdragon 450 1.8 GHz octa-core processor. The realme C1 has a 6.2-inch HD+ 1520 X 720 pixel (19:9 aspect ratio) display with a screen-to-body ratio of 88.8 percent. <q>"Nord but OPPO <b>Real</b>, you know what I mean."</q>
+*oneplus6t
+   name:OnePlus 6T Production
+   desc:It launched with a Qualcomm Snapdragon 845, a dual-lens camera setup, up to 8 GB RAM, and up to 256 GB of storage. It also features a larger 6.41" Optic AMOLED display, and launched with OxygenOS—based on Android Pie (Android 9). The camera has a 'Nightscape' mode which uses a longer exposure time to capture better photos in poor lighting conditions.It became the first OnePlus phone to come with an in-display fingerprint scanner. <q>"OnePlus set a Guinness World Record title of "the most people unboxing a phone simultaneously" on the launch of OnePlus 6T."</q>
+   tag:nov2018
+   passive:increase yield of oppo by 56
+   cost:840 money
+   req:oppoa3s
 //lg phones (optimus series, g, v, velvet, wind + weird one-offs)
 *lgoptimus
 	name:LG Optimus Production
