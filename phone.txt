@@ -771,7 +771,7 @@ Upgrades
     name:OnePlus X Production
     desc:Being the successor to OnePlus 2, OnePlus X was OnePlus' entrance to the budget phone market. <q>"How can it be a <b>succesor</b> when it is a <i>budget</i> phone?"</q>
     tag:oct2015
-    passive:increade yield of oppo by 20
+    passive:increase yield of oppo by 20
     cost:400 money
     req:oneplus2
 *2015oppoa33
