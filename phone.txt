@@ -602,7 +602,7 @@ Upgrades
     passive:increase yield of samsung by 91
     cost:1365 money
     req:2018galaxya8andplus
-*2018galaxya6anda6plus
+*2018galaxya6andplus
     name:(2018) Galaxy A6/6+ Production
     desc:They were announced on 2 May 2018, first released in Europe, Asia, and Latin America the same month, then released in South Korea, Africa, and China. The Samsung Galaxy A6+ is rebranded in South Korea as Galaxy Jean & in China as Galaxy A9 Star lite. <q>"6 + Plus = 6+ = Jean = 9 Star lite"</q>
     tag:may2018
@@ -615,7 +615,7 @@ Upgrades
     tag:june2018
     passive:increase yield of samsung by 99.25
     cost:1488.75 money
-    req:2018galaxya6anda6plus
+    req:2018galaxya6andplus
 *2018galaxya7
     name:(2018) Galaxy A7 Production
     desc:It was announced on 20 September 2018 as the successor of Samsung Galaxy A7 (2017). <q>"7 ALL THE WAYYYYYYYY"</q>
