@@ -404,7 +404,7 @@ Upgrades
     name:iPhone 5 Production
     desc: The first iPhone to be completely developed by Tim Cook. <q>"New Generational Design!"</q>
     tag:sep2012
-    passive:increase yield of apple by  67.5
+    passive:increase yield of apple by 67.5
     cost:1012.5 money
     req:iphone4s
 *iphone5cand5s
